@@ -52,7 +52,7 @@ import TrackVisibility from 'react-on-screen';
             <TrackVisibility>
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
-              <span className="txt-rotate" dataPeriod="10" data-rotate='["interact with the spaceman underneath :) ", "5+ years of techncial sales engineering experience", "I build techncial solutions and solve technical use-cases across business and industries", "I build 3D full-stack web application solutions for real estate and residential business","Hire me to launch your ecommerce full-stack no-code/low code solution", "I build low/code to no/code data pipelines", "Hire me to transform your information technology", "Hire me to launch your business on Amazon, shopify and build your website", "Hire me to solve for any technical use-case " ]'><span className="wrap">{text}</span></span>
+              <span className="txt-rotate" dataperiod="10" data-rotate='["interact with the spaceman underneath :) ", "5+ years of techncial sales engineering experience", "I build techncial solutions and solve technical use-cases across business and industries", "I build 3D full-stack web application solutions for real estate and residential business","Hire me to launch your ecommerce full-stack no-code/low code solution", "I build low/code to no/code data pipelines", "Hire me to transform your information technology", "Hire me to launch your business on Amazon, shopify and build your website", "Hire me to solve for any technical use-case " ]'><span className="wrap">{text}</span></span>
               </div>}
             </TrackVisibility>
           </Col>
