@@ -20,12 +20,20 @@ import {
   starbucks,
   tesla,
   shopify,
-  carrent,
   jobit,
   tripguide,
   threejs,
-  //expertise icons 
+  //skills icons
   web2,
+  //projects
+  kb, 
+  cb786,
+  gfbu,
+  hicrm,
+  insaf,
+  joy,
+
+
 
 } from "../assets";
 
@@ -64,7 +72,7 @@ const services = [
   },
 
   {
-    title: "API Healthcare Solutions",
+    title: "API built Solutions",
     icon: backend,
   },
 
@@ -163,8 +171,8 @@ const experiences = [
     iconBg: "#E6DEDD",
     date: "5/2021 - Present",
     points: [
-      "Transform information technology operations for small businesses to become 2x+ profitable",
-      "Develop low-code/no-code full-stack web applications for small businesses to become 100%+ more agile",
+      "Transform information technology operations for small businesses to become 5x+ profitable",
+
     ],
   },
   {
@@ -174,9 +182,7 @@ const experiences = [
     iconBg: "#383E56",
     date: "05/2021 - 3/2023",
     points: [
-      "Solved big data use-cases to help enterprise accounts including estee lauder build real time data streaming",
-      "Conducted product demos, presentations and solved use-cases around data migration to close business deals",
-      "Specialized within big-data streaming, ETL pipelines and API"
+      "Conducted product demos, presentations and solved technical use-cases around data migration, transformation, APIs and ELT to close business deals",
     ],
   },
 
@@ -187,7 +193,6 @@ const experiences = [
     iconBg: "#383E56",
     date: "1/2021 - 5/2021",
     points: [
-      "Co-created and enhanced a technical Web Development training program for the New York City Department of Education",
       "Delivered technical lectures and mentored over 40 CUNY Computer Science students learn modern foundations of Full-Stack Engineering",
     ],
   },
@@ -209,7 +214,6 @@ const experiences = [
     date: "8/2017 - 12/2018",
     points: [
       "One of the founding Technical Executives that contributed to growing over 3000 customers in 2 years by integrating web API solutions catered to local pharmacies",
-      "Partnered directly with Product, Marketing, and Sales teams to build curriculums customized for complex integration and helped customers achieve 100%+ ROI",
     ],
   },
 ];
@@ -243,16 +247,16 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "Khaled A Beydoun",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "Portfolio react Web app built with scroll animations.",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "scroll animations",
         color: "green-text-gradient",
       },
       {
@@ -260,13 +264,13 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+    image: kb,
+    source_code_link: "https://quiet-queijadas-3dbe21.netlify.app/",
   },
   {
-    name: "Job IT",
+    name: "Club Billionaire 786",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "Discord powered server built and integrated with api's to generate real-time new york stock market (NYSE) data to empower retail investors with insights ",
     tags: [
       {
         name: "react",
@@ -277,33 +281,92 @@ const projects = [
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "discord",
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
-    source_code_link: "https://github.com/",
+    image: cb786,
+    source_code_link: "https://clubillionaire786.com/",
   },
   {
-    name: "Trip Guide",
+    name: "Good Food By Uzma",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "React web app integrated with Airtable as the CMS to reduce the content update time for restaurant owners, resulting in a 30% revenue improvement.",
     tags: [
       {
         name: "nextjs",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "Airtable",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "Netlify Serverless Functions",
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: gfbu,
+    source_code_link: "https://gfbu.netlify.app/",
+  },
+  {
+    name: "Hi-Crm",
+    description:
+      "MERN Stack app with CRUD, NoSQL and Snowflake integration designed to achieve a 50% faster data entry and a 25% boost in user engagement",
+    tags: [
+      {
+        name: "nextjs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "noSQL",
+        color: "green-text-gradient",
+      },
+      {
+        name: "MERN",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "snowflake",
+        color: "blue-text-gradient",
+      },
+    ],
+    image: hicrm,
+    source_code_link: "https://hi-crm.netlify.app/",
+  },
+  {
+    name: "Insaf.world",
+    description:
+      "React web app with Sanity.io CMS, achieving a 90% faster content update time and a 80% boost in web performance.",
+    tags: [
+      {
+        name: "nextjs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "sanity.io",
+        color: "green-text-gradient",
+      },
+    ],
+    image: insaf,
+    source_code_link: "https://insaf.vercel.app/",
+  },
+  {
+    name: "Joy Tech",
+    description:
+      "Digital agency website providing full-stack digital solutions.",
+    tags: [
+      {
+        name: "nextjs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "scroll-animations",
+        color: "green-text-gradient",
+      },
+    ],
+    image: joy,
+    source_code_link: "https://joytech.world/",
   },
 ];
 

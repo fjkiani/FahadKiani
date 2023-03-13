@@ -28,11 +28,21 @@ import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
 
-//skills icons
+// //skills icons
 import web2 from "./img/web2.png";
 
 
-import carrent from "./carrent.png";
+// //project icons
+import kb from "./img/kb.png";
+import cb786 from "./img/cb786.png";
+import gfbu from "./img/gfbu.png";
+import hicrm from "./img/hi-crm.png";
+import insaf from "./img/insaf.png";
+import joy from "./img/joy.png";
+
+
+
+
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 
@@ -62,8 +72,14 @@ export {
   shopify,
   starbucks,
   tesla,
-  carrent,
   jobit,
   tripguide,
   web2,
+  //work icons
+  kb,
+  cb786,
+  gfbu,
+  hicrm,
+  insaf,
+  joy,
 };
