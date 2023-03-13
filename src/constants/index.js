@@ -1,4 +1,5 @@
 import {
+  //tech stack icons
   mobile,
   backend,
   creator,
@@ -23,6 +24,9 @@ import {
   jobit,
   tripguide,
   threejs,
+  //expertise icons 
+  web2,
+
 } from "../assets";
 
 export const navLinks = [
@@ -41,48 +45,45 @@ export const navLinks = [
 ];
 
 const services = [
+  // {
+  //   title: "enterprise technical solutions",
+  //   icon: web,
+  // },
   {
-    title: "enterprise technical solutions",
-    icon: web,
-  },
-  {
-    title: "3D & Fullstack Web development",
+    title: "Fullstack Web development",
     icon: mobile,
   },
   {
-    title: "Data Integration and transformation ",
+    title: "Data Integration",
     icon: backend,
   },
+
   {
-    title: "Data Warehouse and Storage",
-    icon: backend,
-  },
-  {
-    title: "ecommerce stores",
+    title: "ecommerce solutions",
     icon: creator,
   },
 
   {
-    title: "On-prem to cloud migration",
-    icon: creator,
+    title: "API Healthcare Solutions",
+    icon: backend,
   },
 
-  {
-    title: "no code to low code applications",
-    icon: creator,
-  },
-  {
-    title: "API Driven Healthcare Solutions",
-    icon: creator,
-  },
-  {
-    title: "Automated Healthcare Solutions",
-    icon: creator,
-  },
-  {
-    title: "Automated  solutions for restaurants",
-    icon: creator,
-  },
+  // {
+  //   title: "no code to low code applications",
+  //   icon: creator,
+  // },
+  // {
+  //   title: "API Driven Healthcare Solutions",
+  //   icon: creator,
+  // },
+  // {
+  //   title: "Automated Healthcare Solutions",
+  //   icon: creator,
+  // },
+  // {
+  //   title: "Automated  solutions for restaurants",
+  //   icon: creator,
+  // },
 
 ];
 
@@ -98,14 +99,14 @@ const technologies = [
     name: "React JS",
     icon: reactjs,
   },
-  {
-    name: "Redux Toolkit",
-    icon: redux,
-  },
-  {
-    name: "Tailwind CSS",
-    icon: tailwind,
-  },
+  // {
+  //   name: "Redux Toolkit",
+  //   icon: redux,
+  // },
+  // {
+  //   name: "Tailwind CSS",
+  //   icon: tailwind,
+  // },
   {
     name: "Node JS",
     icon: nodejs,
@@ -131,6 +132,28 @@ const technologies = [
     icon: docker,
   },
 ];
+
+
+const skills = [
+  {
+      name: "Web Dev34",
+      icon: web2
+  },
+   {
+      name: "Web Dev 26",
+      icon: web2
+  },
+  {
+    name: "Web Dev34",
+    icon: web2
+},
+ {
+    name: "Web Dev 26",
+    icon: web2
+},
+]
+
+
 
 const experiences = [
   {
@@ -284,4 +307,4 @@ const projects = [
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+export { services, technologies, experiences, testimonials, projects, skills };

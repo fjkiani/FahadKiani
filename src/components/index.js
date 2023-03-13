@@ -10,6 +10,7 @@ import Contact from "./Contact";
 import Earth from "./canvas/Earth";
 import CanvasLoader from "./Loader";
 import HeroTyper from "./HeroTyper";
+import Skills from "./Skills";
 
 
 
@@ -27,5 +28,6 @@ export {
   BallCanvas, 
   ComputersCanvas, 
   StarsCanvas,
+  Skills,
   HeroTyper
 };

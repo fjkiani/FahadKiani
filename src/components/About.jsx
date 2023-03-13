@@ -21,11 +21,11 @@ const ServiceCard = ({ index, title, icon }) => (
         }}
         className='bg-tertiary rounded-[20px] py-5 px-12 min-h-[20px] flex justify-evenly items-center flex-col'
       >
-        {/* <img
+        <img
           src={icon}
           alt='web-development'
           className='w-16 h-16 object-contain'
-        /> */}
+        />
         <h3 className='text-white text-[20px] font-bold text-center'>
           {title}
         </h3>
@@ -38,7 +38,7 @@ const About = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
-        <h1 className={styles.sectionSubText}>Our Solutions </h1>
+        <h1 className={styles.sectionSubText}>About Me </h1>
         <h4 className={styles.sectionHeadText}>5+ years of experience in Sales Engineering, Product, and Software Development</h4>
       </motion.div>
 
