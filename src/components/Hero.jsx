@@ -21,7 +21,7 @@ const Hero = () => {
 
         <div>
           <h1 className={`${styles.heroHeadText} text-white`}>
-            Hello World My Name is <span className='text-[#03fc73]'>Fahad J. Kiani</span>
+            Hello World, My Name is <span className='text-[#03fc73]'>Fahad J. Kiani</span>
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
             <br/>

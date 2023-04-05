@@ -265,7 +265,7 @@ const projects = [
       },
     ],
     image: kb,
-    source_code_link: "https://quiet-queijadas-3dbe21.netlify.app/",
+    source_code_link: "https://khaledbeydoun.com/",
   },
   {
     name: "Club Billionaire 786",
