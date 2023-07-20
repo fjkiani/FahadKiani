@@ -17,6 +17,7 @@ import {
   figma,
   docker,
   meta,
+  imedicare,
   starbucks,
   tesla,
   shopify,
@@ -32,6 +33,8 @@ import {
   hicrm,
   insaf,
   joy,
+  gpt,
+  s
 
 
 
@@ -43,7 +46,7 @@ export const navLinks = [
     title: "About",
   },
   {
-    id: "work",
+    id: "works",
     title: "Work",
   },
   {
@@ -180,7 +183,7 @@ const experiences = [
     company_name: "Talend.com",
     icon: starbucks,
     iconBg: "#383E56",
-    date: "05/2021 - 3/2023",
+    date: "05/2021 - Preset",
     points: [
       "Conducted product demos, presentations and solved technical use-cases around data migration, transformation, APIs and ELT to close business deals",
     ],
@@ -197,7 +200,7 @@ const experiences = [
     ],
   },
   {
-    title: "Solutions Engineer",
+    title: "Founding Solutions Engineer",
     company_name: "1stdibs.com",
     icon: meta,
     iconBg: "#E6DEDD",
@@ -209,7 +212,7 @@ const experiences = [
   {
     title: "Founding Solutions Engineer",
     company_name: "imedicare.com",
-    icon: meta,
+    icon: imedicare,
     iconBg: "#E6DEDD",
     date: "8/2017 - 12/2018",
     points: [
@@ -246,6 +249,48 @@ const testimonials = [
 ];
 
 const projects = [
+  {
+    name: "GPT Clone",
+    description:
+      "A conversational AI app inspired by OpenAI's GPT-3 language model, built with Create React App.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Machine Learning",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Open-AI",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: gpt,
+    source_code_link: "https://open-ai-git-master-fjkiani.vercel.app/",
+  },
+  {
+    name: "GPT 4 Summarizer",
+    description:
+      "GPT summarizer built in react that uses OpenAI's Generative Pretrained Transformer (GPT) models to generate concise summaries of larger text inputs.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Machine Learning",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Open-AI",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: s,
+    source_code_link: "https://github.com/fjkiani/GPT-Summarizer",
+  },
   {
     name: "Khaled A Beydoun",
     description:

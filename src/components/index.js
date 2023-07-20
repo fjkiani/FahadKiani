@@ -12,6 +12,8 @@ import CanvasLoader from "./Loader";
 import HeroTyper from "./HeroTyper";
 import Skills from "./Skills";
 
+//testing
+import HeroSection from "./HeroSection"
 
 
 export {
@@ -29,5 +31,6 @@ export {
   ComputersCanvas, 
   StarsCanvas,
   Skills,
-  HeroTyper
+  HeroTyper,
+  HeroSection
 };

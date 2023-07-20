@@ -27,18 +27,21 @@ import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
+import imedicare from "./company/imedicare.png";
 
 // //skills icons
 import web2 from "./img/web2.png";
 
 
 // //project icons
+import gpt from "./img/gpt.png";
 import kb from "./img/kb.png";
 import cb786 from "./img/cb786.png";
 import gfbu from "./img/gfbu.png";
 import hicrm from "./img/hi-crm.png";
 import insaf from "./img/insaf.png";
 import joy from "./img/joy.png";
+import s from "./img/s.png";
 
 
 
@@ -69,6 +72,7 @@ export {
   typescript,
   threejs,
   meta,
+  imedicare,
   shopify,
   starbucks,
   tesla,
@@ -82,4 +86,6 @@ export {
   hicrm,
   insaf,
   joy,
+  gpt,
+  s
 };
