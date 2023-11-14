@@ -30,11 +30,11 @@ import {
   kb, 
   cb786,
   gfbu,
-  hicrm,
   insaf,
   joy,
   gpt,
-  s
+  s,
+  luton
 
 
 
@@ -70,12 +70,12 @@ const services = [
   },
 
   {
-    title: "ecommerce solutions",
+    title: "Machine learning",
     icon: creator,
   },
 
   {
-    title: "API built Solutions",
+    title: "Data Transformation",
     icon: backend,
   },
 
@@ -209,6 +209,7 @@ const experiences = [
       "Helped increase revenue operations over 100% for the worlds largest luxury ecommerce website within 1 year",
     ],
   },
+
   {
     title: "Founding Solutions Engineer",
     company_name: "imedicare.com",
@@ -313,7 +314,7 @@ const projects = [
     source_code_link: "https://khaledbeydoun.com/",
   },
   {
-    name: "Club Billionaire 786",
+    name: "Club Billionaire",
     description:
       "Discord powered server built and integrated with api's to generate real-time new york stock market (NYSE) data to empower retail investors with insights ",
     tags: [
@@ -331,7 +332,7 @@ const projects = [
       },
     ],
     image: cb786,
-    source_code_link: "https://clubillionaire786.com/",
+    source_code_link: "https://clubillionaire.life",
   },
   {
     name: "Good Food By Uzma",
@@ -355,9 +356,9 @@ const projects = [
     source_code_link: "https://gfbu.netlify.app/",
   },
   {
-    name: "Hi-Crm",
+    name: "Luton Airport Transfer",
     description:
-      "MERN Stack app with CRUD, NoSQL and Snowflake integration designed to achieve a 50% faster data entry and a 25% boost in user engagement",
+      "Car booking app for a taxi company in UK",
     tags: [
       {
         name: "nextjs",
@@ -372,12 +373,12 @@ const projects = [
         color: "pink-text-gradient",
       },
       {
-        name: "snowflake",
+        name: "MongoDB",
         color: "blue-text-gradient",
       },
     ],
-    image: hicrm,
-    source_code_link: "https://hi-crm.netlify.app/",
+    image: luton,
+    source_code_link: "https://lat-tax.com",
   },
   {
     name: "Insaf.world",
@@ -411,7 +412,7 @@ const projects = [
       },
     ],
     image: joy,
-    source_code_link: "https://joytech.world/",
+    source_code_link: "https://joy-inc.netlify.app/",
   },
 ];
 

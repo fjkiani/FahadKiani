@@ -39,7 +39,7 @@ const About = () => {
     <>
       <motion.div variants={textVariant()}>
         <h1 className={styles.sectionSubText}>About Me </h1>
-        <p className={styles.heroSubText}>A versatile Solutions Engineer, Architect, and Software Engineering Instructor,  My experience encompasses enterprise sales/solutions engineering, data transformations, co-creating higher education programs and scaling early-stage sales teams</p>
+        <p className={styles.heroSubText}>A versatile Solutions Engineer, Architect, and Software Engineering Instructor,  My experience encompasses enterprise sales/solutions engineering, data transformations, creating education programs and scaling early-stage startups</p>
       </motion.div>
 
       {/* <motion.p

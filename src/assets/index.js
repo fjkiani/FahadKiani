@@ -42,6 +42,7 @@ import hicrm from "./img/hi-crm.png";
 import insaf from "./img/insaf.png";
 import joy from "./img/joy.png";
 import s from "./img/s.png";
+import luton from "./img/luton.png";
 
 
 
@@ -87,5 +88,6 @@ export {
   insaf,
   joy,
   gpt,
-  s
+  s,
+  luton
 };
