@@ -358,7 +358,7 @@ const projects = [
   {
     name: "Luton Airport Transfer",
     description:
-      "Car booking app for a taxi company in UK",
+      "Car booking app for a taxi company in UK built with Google maps API. ",
     tags: [
       {
         name: "nextjs",
@@ -378,7 +378,7 @@ const projects = [
       },
     ],
     image: luton,
-    source_code_link: "https://lat-tax.com",
+    source_code_link: "https://lat-taxi.com/",
   },
   {
     name: "Insaf.world",
