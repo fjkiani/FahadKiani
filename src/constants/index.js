@@ -250,27 +250,27 @@ const testimonials = [
 ];
 
 const projects = [
-  {
-    name: "GPT Clone",
-    description:
-      "A conversational AI app inspired by OpenAI's GPT-3 language model, built with Create React App.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "Machine Learning",
-        color: "green-text-gradient",
-      },
-      {
-        name: "Open-AI",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: gpt,
-    source_code_link: "https://open-ai-git-master-fjkiani.vercel.app/",
-  },
+  // {
+  //   name: "GPT Clone",
+  //   description:
+  //     "A conversational AI app inspired by OpenAI's GPT-3 language model, built with Create React App.",
+  //   tags: [
+  //     {
+  //       name: "react",
+  //       color: "blue-text-gradient",
+  //     },
+  //     {
+  //       name: "Machine Learning",
+  //       color: "green-text-gradient",
+  //     },
+  //     {
+  //       name: "Open-AI",
+  //       color: "pink-text-gradient",
+  //     },
+  //   ],
+  //   image: gpt,
+  //   source_code_link: "https://open-ai-git-master-fjkiani.vercel.app/",
+  // },
   {
     name: "GPT 4 Summarizer",
     description:
@@ -292,27 +292,27 @@ const projects = [
     image: s,
     source_code_link: "https://github.com/fjkiani/GPT-Summarizer",
   },
-  {
-    name: "Khaled A Beydoun",
-    description:
-      "Portfolio react Web app built with scroll animations.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "scroll animations",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwind",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: kb,
-    source_code_link: "https://khaledbeydoun.com/",
-  },
+  // {
+  //   name: "Khaled A Beydoun",
+  //   description:
+  //     "Portfolio react Web app built with scroll animations.",
+  //   tags: [
+  //     {
+  //       name: "react",
+  //       color: "blue-text-gradient",
+  //     },
+  //     {
+  //       name: "scroll animations",
+  //       color: "green-text-gradient",
+  //     },
+  //     {
+  //       name: "tailwind",
+  //       color: "pink-text-gradient",
+  //     },
+  //   ],
+  //   image: kb,
+  //   source_code_link: "https://khaledbeydoun.com/",
+  // },
   {
     name: "Club Billionaire",
     description:

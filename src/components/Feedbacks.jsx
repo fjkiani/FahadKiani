@@ -50,15 +50,15 @@ const Feedbacks = () => {
         className={`bg-tertiary rounded-2xl ${styles.padding} min-h-[300px]`}
       >
         <motion.div variants={textVariant()}>
-          <p className={styles.sectionSubText}>What others say</p>
-          <h2 className={styles.sectionHeadText}>Endorsements.</h2>
+          <p className={styles.sectionSubText}>We Grow businesses across all lifecycle of Web, Data and Machine Learning </p>
+          <h2 className={styles.sectionHeadText}>Enterprise solutions for SMB's.</h2>
         </motion.div>
       </div>
-      <div className={`-mt-20 pb-14 ${styles.paddingX} flex flex-wrap gap-7`}>
+      {/* <div className={`-mt-20 pb-14 ${styles.paddingX} flex flex-wrap gap-7`}>
         {testimonials.map((testimonial, index) => (
           <FeedbackCard key={testimonial.name} index={index} {...testimonial} />
         ))}
-      </div>
+      </div> */}
     </div>
   );
 };

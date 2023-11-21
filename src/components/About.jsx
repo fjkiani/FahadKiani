@@ -37,10 +37,10 @@ const ServiceCard = ({ index, title, icon }) => (
 const About = () => {
   return (
     <>
-      <motion.div variants={textVariant()}>
-        <h1 className={styles.sectionSubText}>About Me </h1>
-        <p className={styles.heroSubText}>A versatile Solutions Engineer, Architect, and Software Engineering Instructor,  My experience encompasses enterprise sales/solutions engineering, data transformations, creating education programs and scaling early-stage startups</p>
-      </motion.div>
+      {/* <motion.div variants={textVariant()}>
+        <h1 className={styles.sectionSubText}>About Us </h1>
+        <p className={styles.heroSubText}>A modern data-driven, API first and open-source machine learning expertise across all domains of your business. We consult, advise and build to handle end-to-end deployment of technical solutions  </p>
+      </motion.div> */}
 
       {/* <motion.p
         variants={fadeIn("", "", 0.1, 1)}
@@ -54,6 +54,11 @@ const About = () => {
           <ServiceCard key={service.title} index={index} {...service} />
         ))}
       </div>
+      <br></br>
+      <motion.div variants={textVariant()}>
+        <h1 className={styles.sectionSubText}>About Us </h1>
+        <p className={styles.heroSubText}>A modern data-driven, API first and open-source machine learning expertise across all domains of your business. We consult, advise and build to handle end-to-end deployment of technical solutions  </p>
+      </motion.div>
     </>
   );
 };

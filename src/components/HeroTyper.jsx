@@ -8,7 +8,7 @@ import TrackVisibility from 'react-on-screen';
   const [text, setText] = useState('');
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const [index, setIndex] = useState(1);
-  const toRotate = ["I build techncial solutions and solve technical use-cases across business and industries", "I build 3D full-stack web application solutions for real estate and residential business","Hire me to launch your ecommerce full-stack no-code/low code solution", "I build low/code to no/code data pipelines", "Hire me to transform your information technology", "Hire me to launch your business on Amazon, shopify and build your website", "Hire me to solve for any technical use-case " ];
+  const toRotate = ["we build techncial solutions and solve technical use-cases across small businesses", "we build machine learning solutions to grow you business", "we handle end-to-end technical needs for small businesses", "we build performance based web applications", "we build analytic dashboards to grow your business" ];
   const period = -510;
 
   useEffect(() => {
