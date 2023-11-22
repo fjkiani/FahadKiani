@@ -57,7 +57,7 @@ const About = () => {
       <br></br>
       <motion.div variants={textVariant()}>
         <h1 className={styles.sectionSubText}>About Us </h1>
-        <p className={styles.heroSubText}>A modern data-driven, API first and open-source machine learning expertise across all domains of your business. We consult, advise and build to handle end-to-end deployment of technical solutions  </p>
+        <p className={styles.heroSubText}> modern data-driven, API first and open-source machine learning expertise and solutions across all domains of your business. We consult, advise and build to handle end-to-end deployment of technical solutions  </p>
       </motion.div>
     </>
   );
