@@ -1,65 +1,48 @@
-import { useState, useEffect } from "react";
-import { Container, Row, Col } from "react-bootstrap";
-import TrackVisibility from 'react-on-screen';
+import React, { useState, useEffect } from 'react';
 
- const HeroTyper = () => {
-  const [loopNum, setLoopNum] = useState(0);
-  const [isDeleting, setIsDeleting] = useState(false);
-  const [text, setText] = useState('');
-  const [delta, setDelta] = useState(300 - Math.random() * 100);
-  const [index, setIndex] = useState(1);
-  const toRotate = ["we build techncial solutions and solve technical use-cases across small businesses", "we build machine learning solutions to grow you business", "we handle end-to-end technical needs for small businesses", "we build performance based web applications", "we build analytic dashboards to grow your business" ];
-  const period = -510;
+// The TypewriterText component now accepts an array of words as a prop
+const TypewriterText = ({ wordsArray }) => {
+  const [index, setIndex] = useState(0);
+  const [subIndex, setSubIndex] = useState(0);
+  const [blink, setBlink] = useState(true);
+  const [reverse, setReverse] = useState(false);
 
   useEffect(() => {
-    let ticker = setInterval(() => {
-      tick();
-    }, delta);
-
-    return () => { clearInterval(ticker) };
-  }, [text])
-
-  const tick = () => {
-    let i = loopNum % toRotate.length;
-    let fullText = toRotate[i];
-    let updatedText = isDeleting ? fullText.substring(0, text.length - 1) : fullText.substring(0, text.length + 1);
-
-    setText(updatedText);
-
-    if (isDeleting) {
-      setDelta(prevDelta => prevDelta / 2);
+    if (index >= wordsArray.length) {
+      setIndex(0);
+      return;
     }
 
-    if (!isDeleting && updatedText === fullText) {
-      setIsDeleting(true);
-      setIndex(prevIndex => prevIndex - 1);
-      setDelta(period);
-    } else if (isDeleting && updatedText === '') {
-      setIsDeleting(false);
-      setLoopNum(loopNum + 1);
-      setIndex(1);
-      setDelta(50);
-    } else {
-      setIndex(prevIndex => prevIndex + 1);
+    if (subIndex === wordsArray[index].length + 1 && !reverse) {
+      setReverse(true);
+      return;
     }
-  }
+
+    if (subIndex === 0 && reverse) {
+      setReverse(false);
+      setIndex((prev) => (prev + 1) % wordsArray.length);
+      return;
+    }
+
+    const timeout = setTimeout(() => {
+      setSubIndex((prev) => prev + (reverse ? -1 : 1));
+    }, reverse ? 75 : subIndex === wordsArray[index].length ? 1000 : 150);
+
+    return () => clearTimeout(timeout);
+  }, [subIndex, index, reverse, wordsArray]);
+
+  useEffect(() => {
+    const timeout2 = setTimeout(() => {
+      setBlink((prev) => !prev);
+    }, 500);
+    return () => clearTimeout(timeout2);
+  }, [blink]);
 
   return (
-    <section className="banner" id="home">
-      <Container>
-        <Row className="aligh-items-center">
-          <Col xs={12} md={6} xl={7}>
-            <TrackVisibility>
-              {({ isVisible }) =>
-              <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
-              <span className="txt-rotate" dataperiod="10" data-rotate='["interact with the spaceman underneath :) ", "5+ years of techncial sales engineering experience", "I build techncial solutions and solve technical use-cases across business and industries", "I build 3D full-stack web application solutions for real estate and residential business","Hire me to launch your ecommerce full-stack no-code/low code solution", "I build low/code to no/code data pipelines", "Hire me to transform your information technology", "Hire me to launch your business on Amazon, shopify and build your website", "Hire me to solve for any technical use-case " ]'><span className="wrap">{text}</span></span>
-              </div>}
-            </TrackVisibility>
-          </Col>
-        </Row>
-      </Container>
-    </section>
-  )
-}
+    <span className="text-[#03fc73]">
+      {wordsArray[index]?.substring(0, subIndex)}{blink ? '|' : ' '}
+    </span>
+  );
+};
 
-export default HeroTyper;
+export default TypewriterText;

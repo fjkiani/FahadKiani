@@ -2,7 +2,11 @@ import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
 import { styles } from "../styles";
 import { ComputersCanvas } from "./canvas";
-import HeroTyper from "./HeroTyper";
+import HeroTyper from "./HeroTyper"
+
+
+const words1 = ['Grow', 'Scale', 'Save', 'Expand', 'Enhance'];
+
 
 
 const Hero = () => {
@@ -20,14 +24,12 @@ const Hero = () => {
         </div>
 
         <div>
+          <br/>      <br/>      <br/>
           <h1 className={`${styles.heroHeadText} text-white`}>
-            Hello World, we are <span className='text-[#03fc73]'>JoyTech.world</span>
-          </h1>
+      Jedi Labs helps <HeroTyper wordsArray={words1} /> your business 5x
+    </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            <br/>
-            Machine Learning | Web Development | Data Transformation <br></br><br></br><br></br>
-            <HeroTyper/>
-          {/* <div className='w-1 sm:h-80 h-40 violet-gradient' /> */}
+          Machine Learning | Web Development | Data Transformation | 3D | Analytics
 
           </p>
         </div>
@@ -38,7 +40,7 @@ const Hero = () => {
 
       <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center'>
         <a href='#about'>
-          {/* <div className='w-[35px] h-[84px] m{} rounded-3xl border-4 border-secondary flex justify-center items-start p-2'>
+          <div className='w-[35px] h-[84px] m{} rounded-3xl border-4 border-secondary flex justify-center items-start p-2'>
             <motion.div
               animate={{
                 y: [0, 24, 0],
@@ -50,7 +52,7 @@ const Hero = () => {
               }}
               className='w-3 h-3 rounded-full bg-secondary mb-1'
             />
-          </div> */}
+          </div>
         </a>
       </div>
     </section>

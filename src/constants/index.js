@@ -35,9 +35,6 @@ import {
   gpt,
   s,
   luton
-
-
-
 } from "../assets";
 
 export const navLinks = [
@@ -415,5 +412,100 @@ const projects = [
     source_code_link: "https://joy-inc.netlify.app/",
   },
 ];
+
+export const exploreWorlds = [
+  {
+    id: 'world-1',
+    imgUrl: '/planet-02.png',
+    title: 'eCommerce',
+    path: '/Ecommerce',
+
+  },
+  {
+    id: 'world-2',
+    imgUrl: '/planet-02.png',
+    title: 'Real Estate',
+    path: '/test',
+
+  },
+  {
+    id: 'world-3',
+    imgUrl: '/planet-03.png',
+    title: 'Healthcare',
+    path: '/eCommerce',
+
+  },
+  {
+    id: 'world-4',
+    imgUrl: '/planet-04.png',
+    title: 'Financial Institutions',
+    path: '/Test',
+
+  },
+  {
+    id: 'world-5',
+    imgUrl: '/planet-05.png',
+    title: 'Hospitality',
+    path: '/Test',
+
+  },
+];
+
+export const insights = [
+  {
+    imgUrl: '/planet-06.png',
+    title: 'Grow your company 5x ',
+    tech: 'React, Node ',
+    subtitle:
+        'Magna etiam tempor orci eu lobortis elementum nibh tellus molestie. Diam maecenas sed enim ut sem viverra alique.',
+  },
+  {
+    imgUrl: '/planet-07.png',
+    title: '7 tips to easily master the madness of the Metaverse',
+    tech: 'React, Nodex ',
+    subtitle:
+        'Vitae congue eu consequat ac felis donec. Et magnis dis parturient montes nascetur ridiculus mus. Convallis tellus id interdum',
+  },
+  {
+    imgUrl: '/planet-08.png',
+    title: 'With one platform you can explore the whole world virtually',
+    tech: 'React, ABS ',
+    subtitle:
+        'Quam quisque id diam vel quam elementum. Viverra nam libero justo laoreet sit amet cursus sit. Mauris in aliquam sem',
+  },
+  {
+    imgUrl: '/test.png',
+    title: 'With one platform you can explore the whole world virtually',
+    tech: 'React, ABS ',
+    subtitle:
+        'Quam quisque id diam vel quam elementum. Viverra nam libero justo laoreet sit amet cursus sit. Mauris in aliquam sem',
+  },
+];
+
+
+export const startingFeatures = [
+  {
+    title: '1. Data-Driven Diagnostics:',
+    subtitle: 'Harness the power of supervised machine learning to develop predictive models trained on historical health data, enabling the automatic diagnosis of conditions with high precision'
+  },
+  {
+    title: '2. Automated Radiology Interpretation:',
+    subtitle: ' Identify abnormalities in X-rays, MRIs, and CT scans with ML models and empower radiologists with a second, highly reliable opinion.'
+  },
+  {
+    title: '3. Drug Discovery and Validation:',
+    subtitle: 'Speed up the drug discovery process with supervised machine learning models that have been trained on compound databases and biological data to predict the efficacy and safety of new drugs'
+  },
+  {
+    title: '4. Operational Forecasting:',
+    subtitle: 'forecast patient admissions and resource allocation, ensuring that healthcare facilities operate efficiently and are prepared for future demands'
+  },
+  {
+    title: '5. Continuous Learning Systems:',
+    subtitle: ' Establish systems that continuously learn and adapt from new data, ensuring that your healthcare practice remains at the forefront of medical technology and patient care. '
+  },
+  // ...other features
+];
+
 
 export { services, technologies, experiences, testimonials, projects, skills };
