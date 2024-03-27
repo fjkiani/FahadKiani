@@ -43,6 +43,8 @@ import insaf from "./img/insaf.png";
 import joy from "./img/joy.png";
 import s from "./img/s.png";
 import luton from "./img/luton.png";
+import ml from "./img/ml.png";
+import medicai from "./img/medicai.png";
 
 
 
@@ -86,6 +88,8 @@ export {
   gfbu,
   hicrm,
   insaf,
+  ml,
+  medicai,
   joy,
   gpt,
   s,

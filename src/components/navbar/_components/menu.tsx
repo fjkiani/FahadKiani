@@ -46,11 +46,11 @@ export const items: MenuItem[] = [
       //   emoji: <UserPlus className="text-orange-500" />,
       //   href: "/Ecommerce",
       // },
-      {
-        label: "Healthcare",
-        emoji: <DollarSign className="text-green-500" />,
-        href: "/Healthcare",
-      },
+      // {
+      //   label: "Healthcare",
+      //   emoji: <DollarSign className="text-green-500" />,
+      //   href: "/Healthcare",
+      // },
       // {
       //   label: "Engineering",
       //   emoji: <Code className="text-blue-500" />,

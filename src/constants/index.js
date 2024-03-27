@@ -27,13 +27,14 @@ import {
   //skills icons
   web2,
   //projects
-  kb, 
   cb786,
   gfbu,
   insaf,
+  medicai,
   joy,
   gpt,
   s,
+  ml,
   luton
 } from "../assets";
 
@@ -344,27 +345,68 @@ export const dataAnalyticsFeatures = [
 
 
 const projects = [
-  // {
-  //   name: "GPT Clone",
-  //   description:
-  //     "A conversational AI app inspired by OpenAI's GPT-3 language model, built with Create React App.",
-  //   tags: [
-  //     {
-  //       name: "react",
-  //       color: "blue-text-gradient",
-  //     },
-  //     {
-  //       name: "Machine Learning",
-  //       color: "green-text-gradient",
-  //     },
-  //     {
-  //       name: "Open-AI",
-  //       color: "pink-text-gradient",
-  //     },
-  //   ],
-  //   image: gpt,
-  //   source_code_link: "https://open-ai-git-master-fjkiani.vercel.app/",
-  // },
+  {
+    name: "Data Dashboard",
+    description:
+      "Interactive dashboard to visualize key performance indicators (KPIs), product performance, and transaction data. The application is designed to visualize and interact with machine learning model predictions and their performance metrics.",
+    tags: [
+      {
+        name: "Vite.js",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Machine Learning",
+        color: "green-text-gradient",
+      },
+      {
+        name: "TypeScript",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Snowflake",
+        color: "green-text-gradient",
+      },
+      {
+        name: "S3",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "AWS",
+        color: "blue-text-gradient",
+      },
+    ],
+    image: ml,
+    source_code_link: "https://ml-your-business.netlify.app/",
+  },
+  {
+    name: "Pneumonia detection with AI ",
+    description:
+      " Full-Stack application built with interactive tools for uploading, viewing, and analyzing medical images with AI-powered insights that enable diagnostic results within seconds with over 80% accuracy ",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "AWS",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Sagemaker",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "S3",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Supervised Machine Learning",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: medicai,
+    source_code_link: "https://medicalai.world/",
+  },
   {
     name: "GPT 4 Summarizer",
     description:
@@ -386,128 +428,71 @@ const projects = [
     image: s,
     source_code_link: "https://github.com/fjkiani/GPT-Summarizer",
   },
+
   // {
-  //   name: "Khaled A Beydoun",
+  //   name: "Club Billionaire",
   //   description:
-  //     "Portfolio react Web app built with scroll animations.",
+  //     "Discord powered server built and integrated with api's to generate real-time new york stock market (NYSE) data to empower retail investors with insights ",
   //   tags: [
   //     {
   //       name: "react",
   //       color: "blue-text-gradient",
   //     },
   //     {
-  //       name: "scroll animations",
+  //       name: "restapi",
   //       color: "green-text-gradient",
   //     },
   //     {
-  //       name: "tailwind",
+  //       name: "discord",
   //       color: "pink-text-gradient",
   //     },
   //   ],
-  //   image: kb,
-  //   source_code_link: "https://khaledbeydoun.com/",
+  //   image: cb786,
+  //   source_code_link: "https://clubillionaire.life",
   // },
-  {
-    name: "Club Billionaire",
-    description:
-      "Discord powered server built and integrated with api's to generate real-time new york stock market (NYSE) data to empower retail investors with insights ",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "restapi",
-        color: "green-text-gradient",
-      },
-      {
-        name: "discord",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: cb786,
-    source_code_link: "https://clubillionaire.life",
-  },
-  {
-    name: "Good Food By Uzma",
-    description:
-      "React web app integrated with Airtable as the CMS to reduce the content update time for restaurant owners, resulting in a 30% revenue improvement.",
-    tags: [
-      {
-        name: "nextjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "Airtable",
-        color: "green-text-gradient",
-      },
-      {
-        name: "Netlify Serverless Functions",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: gfbu,
-    source_code_link: "https://gfbu.netlify.app/",
-  },
-  {
-    name: "Luton Airport Transfer",
-    description:
-      "Car booking app for a taxi company in UK built with Google maps API. ",
-    tags: [
-      {
-        name: "nextjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "noSQL",
-        color: "green-text-gradient",
-      },
-      {
-        name: "MERN",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "MongoDB",
-        color: "blue-text-gradient",
-      },
-    ],
-    image: luton,
-    source_code_link: "https://lat-taxi.com/",
-  },
-  {
-    name: "Insaf.world",
-    description:
-      "React web app with Sanity.io CMS, achieving a 90% faster content update time and a 80% boost in web performance.",
-    tags: [
-      {
-        name: "nextjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "sanity.io",
-        color: "green-text-gradient",
-      },
-    ],
-    image: insaf,
-    source_code_link: "https://insaf.vercel.app/",
-  },
-  {
-    name: "Joy Tech",
-    description:
-      "Digital agency website providing full-stack digital solutions.",
-    tags: [
-      {
-        name: "nextjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "scroll-animations",
-        color: "green-text-gradient",
-      },
-    ],
-    image: joy,
-    source_code_link: "https://joy-inc.netlify.app/",
-  },
+ 
+  // {
+  //   name: "Luton Airport Transfer",
+  //   description:
+  //     "Car booking app for a taxi company in UK built with Google maps API. ",
+  //   tags: [
+  //     {
+  //       name: "nextjs",
+  //       color: "blue-text-gradient",
+  //     },
+  //     {
+  //       name: "noSQL",
+  //       color: "green-text-gradient",
+  //     },
+  //     {
+  //       name: "MERN",
+  //       color: "pink-text-gradient",
+  //     },
+  //     {
+  //       name: "MongoDB",
+  //       color: "blue-text-gradient",
+  //     },
+  //   ],
+  //   image: luton,
+  //   source_code_link: "https://lat-taxi.com/",
+  // },
+  // {
+  //   name: "Insaf.world",
+  //   description:
+  //     "React web app with Sanity.io CMS, achieving a 90% faster content update time and a 80% boost in web performance.",
+  //   tags: [
+  //     {
+  //       name: "nextjs",
+  //       color: "blue-text-gradient",
+  //     },
+  //     {
+  //       name: "sanity.io",
+  //       color: "green-text-gradient",
+  //     },
+  //   ],
+  //   image: insaf,
+  //   source_code_link: "https://insaf.vercel.app/",
+  // },
 ];
 
 export const exploreWorlds = [
