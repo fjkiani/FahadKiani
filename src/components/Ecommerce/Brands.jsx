@@ -50,10 +50,12 @@ const Brands = () => {
         </div> */}
 
         <div className="items-center flex justify-center flex-col text-white">
+        <p>Jedi Labs</p>
           <img
             src="/images/logo.svg"
             alt="logo"
             className="pt-2 xl:pt-0 w-10 xl:w-14"
+            
           />
 
           <div className="text-center">

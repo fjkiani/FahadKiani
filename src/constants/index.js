@@ -246,6 +246,103 @@ const testimonials = [
   },
 ];
 
+//second section
+
+export const features = [
+  {
+    id: "feature-1",
+    icon: mobile,
+    title: "Eliminate Emotional Trading ",
+    content:
+      "Replace emotional trading with automated bots that signal alerts and market direction ",
+  },
+  {
+    id: "feature-2",
+    icon: mobile,
+    title: "Simplify your trading",
+    content:
+      "Trading is hard, utilize our bots and tools to help you become consistent and acurate ",
+  },
+  {
+    id: "feature-3",
+    icon: mobile,
+    title: "Community Inspired",
+    content:
+      "Connect with traders across and build your capital and portfolio together",
+  },
+];
+
+export const dataTransformationFeatures = [
+  {
+    id: 'feature1',
+    icon: mobile,
+    title: 'Automated ETL Processes',
+    content: 'Streamline data extraction, transformation, and loading with automation.'
+  },
+  {
+    id: 'feature2',
+    icon: mobile,
+    title: 'Real-time Data Integration',
+    content: 'Harness the power of data analytics to make informed decisions.'
+  },
+];
+
+export const machineLearningFeatures = [
+  {
+    id: 'mlfeature1',
+    icon: web2,
+    title: 'Predictive Analysis',
+    content: 'Deploy machine learning models that predict trends and behaviors.'
+  },
+  {
+    id: 'mlfeature2',
+    icon: web2,
+    title: 'Natural Language Processing',
+    content: 'Extract insights and meaning from unstructured text data.'
+  },
+
+];
+
+export const webDevelopmentFeatures = [
+
+  {
+    id: 'webdev2',
+    icon: javascript,
+    title: 'Frontend Development',
+    content: 'Building interactive and user-friendly interfaces with cutting-edge technologies.'
+  },
+  {
+    id: 'webdev3',
+    icon: javascript,
+    title: 'Backend Development',
+    content: 'Robust and scalable server-side solutions to power your applications.'
+  },
+  // ...other features
+];
+
+export const dataAnalyticsFeatures = [
+  {
+    id: 'dataAnalytic1',
+    icon: mongodb,
+    title: 'Predictive Analytics',
+    content: 'Utilize historical data to predict future trends and make proactive business decisions.'
+  },
+  {
+    id: 'dataAnalytic2',
+    icon: mongodb,
+    title: 'Data Processing',
+    content: 'Efficiently process large volumes of data to extract meaningful insights.'
+  },
+  {
+    id: 'dataAnalytic3',
+    icon: mongodb,
+    title: 'Data Visualization',
+    content: 'Transform complex data sets into clear, compelling, and interactive visualizations.'
+  },
+  // ...other features
+];
+
+
 const projects = [
   // {
   //   name: "GPT Clone",

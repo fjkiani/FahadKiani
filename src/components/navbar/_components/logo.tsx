@@ -12,7 +12,7 @@ const LogoContainer = styled.div`
 `;
 
 const LogoImage = styled.img`
-  width: 150px; // You can keep this as is, or adjust as needed
+  width: 95px; // You can keep this as is, or adjust as needed
   height: auto; // Maintains the aspect ratio of the image
   margin-top: -3rem;
 

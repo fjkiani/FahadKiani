@@ -4,9 +4,32 @@ import { useState } from "react";
 import { motion } from 'framer-motion';
 import { StartSteps, TitleText, TypingText } from '../components';
 import HeroTyper from "../../HeroTyper"
+import  {styles, layout } from '../../../styles';
+import { features } from '../../../constants';
+import { dataTransformationFeatures, machineLearningFeatures, webDevelopmentFeatures, dataAnalyticsFeatures } from '../../../constants';
+
+
+
+
 
 const words2 = ['Consulting', 'Development', 'Expertise', 'Deployment'];
 
+
+const FeatureCard = ({ icon, title, content, index }) => (
+  <div className={`flex flex-row p-6 rounded-[20px] ${index !== features.length - 1 ? "mb-6" : "mb-0"} feature-card`}>
+    <div className={`w-[64px] h-[64px] rounded-full ${styles.flexCenter} bg-dimBlue`}>
+      <img src={icon} alt="star" className="w-[50%] h-[50%] object-contain" />
+    </div>
+    <div className="flex-1 flex flex-col ml-3">
+      <h4 className="font-poppins font-semibold text-white text-[18px] leading-[23.4px] mb-1">
+        {title}
+      </h4>
+      <p className="font-poppins font-normal text-dimWhite text-[16px] leading-[24px]">
+        {content}
+      </p>
+    </div>
+  </div>
+);
 
 
 // import Image from "next/image";
@@ -23,39 +46,61 @@ const SecondSection = () => {
     switch (activeTitle) {
       case "Machine Learning":
         return (
-          <div className="md:py-8">
-            <h2 className="py-10 text-3xl font-medium">
-              NLP, Computer Vision and Audio 
-            </h2>
-            <p className="text-4xl leading-relax text-[#03fc73] font-light">
-            By exploiting the foresight offered by data, we empower organizations to foresee customer needs and industry trends, crafting a more proactive approach their delivery.
-            </p>
-          </div>
+          <section id="ml-features" className={layout.section}>
+            <div className={layout.sectionInfo}>
+              <h2 className={styles.heading2}>
+                Harness Machine Learning for Strategic Advantage
+              </h2>
+              <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
+                Integrate advanced machine learning capabilities to unlock predictive insights and automate complex processes.
+              </p>
+            </div>
+            <div className={`${layout.sectionImg} flex-col`}>
+              {machineLearningFeatures.map((feature, index) => (
+                <FeatureCard key={feature.id} {...feature} index={index} />
+              ))}
+            </div>
+          </section>
         );
 
-      case "Data Transformation":
-        return (
-          <div className="md:py-8">
-            <h2 className="py-10 text-3xl font-medium">
-              Cloud Migration and beyond
-            </h2>
-            <p className="text-3xl leading-relax text-[#03fc73] font-light">
-            We help organizations distill complex datasets into intuitive visual narratives, assisting stakeholders in informed decision-making and uncovering hidden opportunities for advancement.
-            </p>
-          </div>
-        );
+        case "Data Transformation":
+          return (
+            <section id="features" className={layout.section}>
+              <div className={layout.sectionInfo}>
+                <h2 className={styles.heading2}>
+                  Leverage AI, Data Analytics and Automated Signals to Become a Winning Trader
+                </h2>
+                <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
+                Empower your organization with the tools to transform complex data into clear and actionable insights.
+                </p>
+              </div>
+              <div className={`${layout.sectionImg} flex-col`}>
+                {/* If you have specific feature cards for the Data Transformation section, map them here */}
+                {dataTransformationFeatures.map((feature, index) => (
+                  <FeatureCard key={feature.id} {...feature} index={index} />
+                ))}
+              </div>
+            </section>
+          );
 
-      case "Web Development":
-        return (
-          <div className="md:py-8">
-            <h2 className="py-10 text-3xl font-medium">
-             Full Stack Web Development
-            </h2>
-            <p className="text-3xl leading-relax text-[#rgb(32 170 94)] font-light">
-            At the heart of our company lies a profound commitment to revolutionize the digital landscape through unparalleled web development services.
-            </p>
-          </div>
-        );
+          case "Web Development":
+            return (
+              <section id="web-development-features" className={layout.section}>
+                <div className={layout.sectionInfo}>
+                  <h2 className={styles.heading2}>
+                    Crafting Digital Experiences
+                  </h2>
+                  <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
+                    From idea to deployment, we develop web solutions that drive business growth and user engagement.
+                  </p>
+                </div>
+                <div className={`${layout.sectionImg} flex-col`}>
+                  {webDevelopmentFeatures.map((feature, index) => (
+                    <FeatureCard key={feature.id} {...feature} index={index} />
+                  ))}
+                </div>
+              </section>
+            );
 
         case "Mobile Development":
           return (
@@ -63,22 +108,27 @@ const SecondSection = () => {
               <h2 className="py-10 text-3xl font-medium">
                 These  write themselves
               </h2>
-              <p className="text-3xl leading-relax text-[#3d2e7c] font-light">
-              At the heart of our company lies a profound commitment to revolutionize the digital landscape through unparalleled web development services 
-              </p>
             </div>
           );
 
-      case "Data Analytics":
-        return (
-          <div className="md:py-8">
-            <h2 className="py-10 text-3xl font-medium">
-            Transforming Data into Decisions            </h2>
-            <p className="text-3xl leading-relax text-[#rgb(3 252 115 / var(--tw-text-opacity))] font-light">
-            Our data visualization services transform complex datasets into intuitive, interactive visual representations. By presenting data in an easily digestible format, we enable stakeholders at all levels to grasp critical insights quickly, facilitating better communication and decision-making.
-            </p>
-          </div>
-        );
+          case "Data Analytics":
+            return (
+              <section id="data-analytics-features" className={layout.section}>
+                <div className={layout.sectionInfo}>
+                  <h2 className={styles.heading2}>
+                    Turning Data Into Action
+                  </h2>
+                  <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
+                    Harness the power of data to unlock actionable insights and drive strategic business outcomes.
+                  </p>
+                </div>
+                <div className={`${layout.sectionImg} flex-col`}>
+                  {dataAnalyticsFeatures.map((feature, index) => (
+                    <FeatureCard key={feature.id} {...feature} index={index} />
+                  ))}
+                </div>
+              </section>
+            );
       default:
         return null;
     }
@@ -88,10 +138,11 @@ const SecondSection = () => {
     <div
   className="pt-40 flex flex-col lg:flex-row items-center justify-center lg:space-x-10 bg-black"
 >
+
   <div className="w-full lg:w-2/3 text-center lg:text-left px-6 mb-6">
-    <h1 className="text-4xl lg:text-4xl font-small text-white mb-6">
-      Technical <HeroTyper wordsArray={words2} /> for your business
-    </h1>
+  <h1 className="text-1xl md:text-4xl lg:text-5xl font-light text-white mb-6 leading-snug">
+  Technical <HeroTyper wordsArray={words2} /> for your business
+</h1>
     
     <div className="flex flex-wrap justify-center lg:justify-start gap-2 mb-6">
       {["Machine Learning", "Data Transformation", "Web Development", "Data Analytics"].map((title) => (
