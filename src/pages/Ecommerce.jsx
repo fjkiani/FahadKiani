@@ -6,12 +6,14 @@ import { About, Contact, Experience, Feedbacks, Hero, Navbar, Tech, Works, Stars
 const SamplePage = () => {
   return (
     <div className='relative z-0 bg-primary'>
-      {/* <Feedbacks /> */}
-      {/* <div className="gradient-03 z-0" /> */}
+      <Feedbacks />
+      <div className="gradient-03 z-0" />
       <Tech/>
       <Brands/>
       {/* <Explore /> */}
       {/* <Works /> */}
+      <StarsCanvas /> Rendered on every page
+
 
     </div>
   );

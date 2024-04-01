@@ -28,6 +28,19 @@ import Brands from "./Ecommerce/Brands";
 import FirstSection from "../components/Healthcare/_components/first-section";
 import SecondSection2 from "../components/Healthcare/_components/second-section";
 
+
+//projects -> HealthHive
+import HHFirstSection from "../components/Projects/HealthHive/first-section";
+import HHFeatures from "../components/Projects/HealthHive/features";
+import HHSecondSection from "../components/Projects/HealthHive/second-section";
+import HHThirdSection from "../components/Projects/HealthHive/third-section";
+//-> medicalAI
+import MAISecondSection from "../components/Projects/HealthHive/MedicalAI/second-section";
+
+//logo slider
+import HHLogoSlider from "../components/Projects/HealthHive/slider";
+
+
 //testing
 import Button from '/src/components/Button';
 
@@ -77,6 +90,14 @@ export {
   SecondSection,
   //healthcare page components
   FirstSection,
-  SecondSection2
+  SecondSection2,
+  //projects -> HealthHive -> resuable components 
+  HHFirstSection,
+  HHFeatures,
+  HHSecondSection,
+  HHThirdSection,
+  //medicalAI
+  //loogos slider
+  HHLogoSlider
 
 };

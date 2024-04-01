@@ -35,8 +35,23 @@ import {
   gpt,
   s,
   ml,
-  luton
+  iphone,
+  luton,
+  snowflake,
+  streamlit,
+  numpy,
+  python,
+  vscode,
+  snow_stream,
+  snow
 } from "../assets";
+
+//videos
+import HHVideo from '../assets/videos/HH.mp4';
+import MedicalAI from '../assets/videos/medical-ai.mp4';
+
+//partner/integration logos 
+
 
 export const navLinks = [
   {
@@ -126,15 +141,15 @@ const technologies = [
   },
   {
     name: "Three JS",
-    icon: threejs,
+    icon: snowflake,
   },
   {
-    name: "git",
-    icon: git,
+    name: "vscode",
+    icon: vscode,
   },
   {
-    name: "figma",
-    icon: figma,
+    name: "python",
+    icon: python,
   },
   {
     name: "docker",
@@ -344,6 +359,153 @@ export const dataAnalyticsFeatures = [
 ];
 
 
+//HealthHive's success
+
+export const HHData = [
+  {
+    id: 'feature1',
+    icon: mobile,
+    title: 'Automated ETL Processes',
+    content: 'Streamline data extraction, transformation, and loading with automation.'
+  },
+  {
+    id: 'feature2',
+    icon: mobile,
+    title: 'Real-time Data Integration',
+    content: 'Harness the power of data analytics to make informed decisions.'
+  },
+];
+
+export const HHML = [
+  {
+    id: 'mlfeature1',
+    icon: web2,
+    title: 'Test Analysis',
+    content: 'Deploy machine learning models that predict trends and behaviors.'
+  },
+  {
+    id: 'mlfeature2',
+    icon: web2,
+    title: 'Natural Language Processing',
+    content: 'Extract insights and meaning from unstructured text data.'
+  },
+
+];
+
+export const HHWebDev = [
+
+  {
+    id: 'webdev2',
+    icon: javascript,
+    title: 'Frontend Development',
+    content: 'Building interactive and user-friendly interfaces with cutting-edge technologies.'
+  },
+  {
+    id: 'webdev3',
+    icon: javascript,
+    title: 'Backend Development',
+    content: 'Robust and scalable server-side solutions to power your applications.'
+  },
+  // ...other features
+];
+
+export const HHDataAnalytics = [
+  {
+    id: 'dataAnalytic1',
+    icon: mongodb,
+    title: 'Predictive Analytics',
+    content: 'Utilize historical data to predict future trends and make proactive business decisions.'
+  },
+  {
+    id: 'dataAnalytic2',
+    icon: mongodb,
+    title: 'Data Processing',
+    content: 'Efficiently process large volumes of data to extract meaningful insights.'
+  },
+  {
+    id: 'dataAnalytic3',
+    icon: mongodb,
+    title: 'Data Visualization',
+    content: 'Transform complex data sets into clear, compelling, and interactive visualizations.'
+  },
+  // ...other features
+];
+
+
+
+
+
+
+//Case Study Components 
+export const projectsDetails = {
+  dataDashboard: {
+    title: "HealthHive's Case Study",
+    subtitle: "Improved ROI forecast by 400%+ ",
+    description: "Built on Snowflake and Streamlit.",
+    videoSrc: HHVideo,
+    benefits: [
+      "To record presentations",
+      "To deliver better feedback",
+      "To share knowledge",
+    ],
+  },
+  medicalAI: {
+    title: "MedicalAI's Case Study",
+    subtitle: "Medical Diagnostics with AI",
+    description: "Built on Sagemaker, React and S3.",
+    videoSrc: MedicalAI,
+    benefits: [
+      "To record presentations",
+      "To deliver better feedback",
+      "To share knowledge",
+    ],
+  },
+  // Define other projects similarly...
+};
+
+// 5 steps technical components HealthHive
+
+
+
+
+//Healthive sections
+
+// The data can come from a constant file or could be fetched from an API
+export const  thirdSectionData = {
+    // tagline: "Transform Your Data Into Predictable Profit!",
+  title: "Transform Data Into Predictable Profit",
+  subtitle: "HealthHive harnesed the power of advanced data analytics to forecast the ROI of their campaigns, and clarity across business dimensions",
+  image: snow_stream,
+  features: [
+    "Precise ROI Projections",
+    "Evidence-Based Planning",
+    "Resource Allocation",
+    "Competitive Analysis",
+    "Financial Forecasting",
+    "Risk Management:",
+  ],
+  buttonText: "Get Bird AI",
+};
+
+
+//logos slider for projects 
+
+//healthHive -> logos 
+export const logosData = [
+  { src: snowflake, alt: "logo 1", link: "https://example.com/link1", className: "w-16 h-16" },
+  { src: numpy, alt: "logo 1", link: "https://example.com/link1", className: "w-16 h-16" },
+  { src: python, alt: "logo 2", link: "https://example.com/link2", className: "w-16 h-16" },
+  { src: vscode, alt: "logo 1", link: "https://example.com/link1", className: "w-16 h-16" },
+  { src: streamlit, alt: "logo 2", link: "https://example.com/link2", className: "w-16 h-16" },
+  // ...more logos with their corresponding links
+];
+
+
+
+
+
+
+
 const projects = [
   {
     name: "Data Dashboard",
@@ -377,6 +539,8 @@ const projects = [
     ],
     image: ml,
     source_code_link: "https://ml-your-business.netlify.app/",
+    // case_study_link: "/healthhive"
+    
   },
   {
     name: "Pneumonia detection with AI ",
@@ -406,14 +570,16 @@ const projects = [
     ],
     image: medicai,
     source_code_link: "https://medicalai.world/",
+    case_study_link: "/medicalai"
+
   },
   {
-    name: "GPT 4 Summarizer",
+    name: "Forecaste ROI",
     description:
-      "GPT summarizer built in react that uses OpenAI's Generative Pretrained Transformer (GPT) models to generate concise summaries of larger text inputs.",
+      "The interactive web application built with Streamlit visualizes these predictions, allowing users to experiment with budget allocations and see their potential impact on ROI in real-time. Predict ROI based on the input budgets for search engines, social media, video, and email utilizing a Linear Regression model trained on historical data",
     tags: [
       {
-        name: "react",
+        name: "Streamlit",
         color: "blue-text-gradient",
       },
       {
@@ -421,79 +587,101 @@ const projects = [
         color: "green-text-gradient",
       },
       {
-        name: "Open-AI",
+        name: "Snowflake",
         color: "pink-text-gradient",
       },
     ],
-    image: s,
-    source_code_link: "https://github.com/fjkiani/GPT-Summarizer",
+    image: iphone,
+    source_code_link: "https://medicalai.world/",
+    case_study_link: "/healthhive"
   },
+]
+//   // {
+//   //   name: "GPT 4 Summarizer",
+//   //   description:
+//   //     "GPT summarizer built in react that uses OpenAI's Generative Pretrained Transformer (GPT) models to generate concise summaries of larger text inputs.",
+//   //   tags: [
+//   //     {
+//   //       name: "react",
+//   //       color: "blue-text-gradient",
+//   //     },
+//   //     {
+//   //       name: "Machine Learning",
+//   //       color: "green-text-gradient",
+//   //     },
+//   //     {
+//   //       name: "Open-AI",
+//   //       color: "pink-text-gradient",
+//   //     },
+//   //   ],
+//   //   image: s,
+//   //   source_code_link: "https://gpt-summarizer-api.netlify.app/",
+//   // },
 
-  // {
-  //   name: "Club Billionaire",
-  //   description:
-  //     "Discord powered server built and integrated with api's to generate real-time new york stock market (NYSE) data to empower retail investors with insights ",
-  //   tags: [
-  //     {
-  //       name: "react",
-  //       color: "blue-text-gradient",
-  //     },
-  //     {
-  //       name: "restapi",
-  //       color: "green-text-gradient",
-  //     },
-  //     {
-  //       name: "discord",
-  //       color: "pink-text-gradient",
-  //     },
-  //   ],
-  //   image: cb786,
-  //   source_code_link: "https://clubillionaire.life",
-  // },
+//   // {
+//   //   name: "Club Billionaire",
+//   //   description:
+//   //     "Discord powered server built and integrated with api's to generate real-time new york stock market (NYSE) data to empower retail investors with insights ",
+//   //   tags: [
+//   //     {
+//   //       name: "react",
+//   //       color: "blue-text-gradient",
+//   //     },
+//   //     {
+//   //       name: "restapi",
+//   //       color: "green-text-gradient",
+//   //     },
+//   //     {
+//   //       name: "discord",
+//   //       color: "pink-text-gradient",
+//   //     },
+//   //   ],
+//   //   image: cb786,
+//   //   source_code_link: "https://clubillionaire.life",
+//   // },
  
-  // {
-  //   name: "Luton Airport Transfer",
-  //   description:
-  //     "Car booking app for a taxi company in UK built with Google maps API. ",
-  //   tags: [
-  //     {
-  //       name: "nextjs",
-  //       color: "blue-text-gradient",
-  //     },
-  //     {
-  //       name: "noSQL",
-  //       color: "green-text-gradient",
-  //     },
-  //     {
-  //       name: "MERN",
-  //       color: "pink-text-gradient",
-  //     },
-  //     {
-  //       name: "MongoDB",
-  //       color: "blue-text-gradient",
-  //     },
-  //   ],
-  //   image: luton,
-  //   source_code_link: "https://lat-taxi.com/",
-  // },
-  // {
-  //   name: "Insaf.world",
-  //   description:
-  //     "React web app with Sanity.io CMS, achieving a 90% faster content update time and a 80% boost in web performance.",
-  //   tags: [
-  //     {
-  //       name: "nextjs",
-  //       color: "blue-text-gradient",
-  //     },
-  //     {
-  //       name: "sanity.io",
-  //       color: "green-text-gradient",
-  //     },
-  //   ],
-  //   image: insaf,
-  //   source_code_link: "https://insaf.vercel.app/",
-  // },
-];
+//   // {
+//   //   name: "Luton Airport Transfer",
+//   //   description:
+//   //     "Car booking app for a taxi company in UK built with Google maps API. ",
+//   //   tags: [
+//   //     {
+//   //       name: "nextjs",
+//   //       color: "blue-text-gradient",
+//   //     },
+//   //     {
+//   //       name: "noSQL",
+//   //       color: "green-text-gradient",
+//   //     },
+//   //     {
+//   //       name: "MERN",
+//   //       color: "pink-text-gradient",
+//   //     },
+//   //     {
+//   //       name: "MongoDB",
+//   //       color: "blue-text-gradient",
+//   //     },
+//   //   ],
+//   //   image: luton,
+//   //   source_code_link: "https://lat-taxi.com/",
+//   // },
+//   // {
+//   //   name: "Insaf.world",
+//   //   description:
+//   //     "React web app with Sanity.io CMS, achieving a 90% faster content update time and a 80% boost in web performance.",
+//   //   tags: [
+//   //     {
+//   //       name: "nextjs",
+//   //       color: "blue-text-gradient",
+//   //     },
+//   //     {
+//   //       name: "sanity.io",
+//   //       color: "green-text-gradient",
+//   //     },
+//   //   ],
+//   //   image: insaf,
+//   //   source_code_link: "https://insaf.vercel.app/",
+//   // },
 
 export const exploreWorlds = [
   {

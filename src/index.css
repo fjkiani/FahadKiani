@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 
+
 @tailwind components;
 @tailwind utilities;
 
@@ -248,3 +249,52 @@
   width: 40%;
   z-index: -4;
 }
+
+
+.projectCardContainer {
+  transition: transform 0.2s ease-in-out;
+}
+
+.projectCardContainer:hover {
+  transform: translateY(-5px);
+}
+
+.buttonGroup {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.sourceCodeBtn, .caseStudyBtn {
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  border: none;
+  outline: none;
+}
+
+.sourceCodeBtn {
+  background-color: #2563eb; /* Adjust with your color */
+  color: white;
+}
+
+.sourceCodeBtn:hover {
+  background-color: #1d4ed8; /* Adjust with your color */
+}
+
+.caseStudyBtn {
+  background-color: #22c55e; /* Adjust with your color */
+  color: white;
+}
+
+.caseStudyBtn:hover {
+  background-color: #16a34a; /* Adjust with your color */
+}
+
+

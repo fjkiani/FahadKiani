@@ -21,6 +21,8 @@ import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
+import snow from "./tech/snowflake.png";
+
 
 //experience icons
 import meta from "./company/meta.png";
@@ -45,7 +47,19 @@ import s from "./img/s.png";
 import luton from "./img/luton.png";
 import ml from "./img/ml.png";
 import medicai from "./img/medicai.png";
+import iphone from "./img/iphone.png";
+import snow_stream from "./img/snow_stream.png";
 
+
+//partner icons
+import snowflake from "./tech/snowflake.png";
+import streamlit from "./tech/streamlit.png";
+import numpy from "./tech/numpy.png";
+import python from "./tech/python.png";
+import vscode from "./tech/vscode.png";
+
+//videos 
+import HH from "./videos/HH.mp4"
 
 
 
@@ -93,5 +107,16 @@ export {
   joy,
   gpt,
   s,
-  luton
+  luton,
+  iphone,
+  snow,
+  snow_stream,
+  //new icons
+  snowflake,
+  streamlit,
+  numpy,
+  python,
+  vscode,
+  //videos
+  HH
 };

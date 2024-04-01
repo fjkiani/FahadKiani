@@ -6,7 +6,7 @@ import { StartSteps, TitleText, TypingText } from '../components';
 import HeroTyper from "../../HeroTyper"
 import  {styles, layout } from '../../../styles';
 import { features } from '../../../constants';
-import { dataTransformationFeatures, machineLearningFeatures, webDevelopmentFeatures, dataAnalyticsFeatures } from '../../../constants';
+import {machineLearningFeatures, dataTransformationFeatures, webDevelopmentFeatures, dataAnalyticsFeatures } from '../../../constants';
 
 
 
@@ -37,101 +37,55 @@ const FeatureCard = ({ icon, title, content, index }) => (
 const SecondSection = () => {
   const [activeTitle, setActiveTitle] = useState("Machine Learning");
 
-  const handleTitleClick = (title: any) => {
+  const handleTitleClick = (title) => {
     setActiveTitle(title);
   };
-  
 
   const renderContent = () => {
+    let featureSet;
+    let sectionTitle;
+    let sectionParagraph;
+
     switch (activeTitle) {
       case "Machine Learning":
-        return (
-          <section id="ml-features" className={layout.section}>
-            <div className={layout.sectionInfo}>
-              <h2 className={styles.heading2}>
-                Harness Machine Learning for Strategic Advantage
-              </h2>
-              <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
-                Integrate advanced machine learning capabilities to unlock predictive insights and automate complex processes.
-              </p>
-            </div>
-            <div className={`${layout.sectionImg} flex-col`}>
-              {machineLearningFeatures.map((feature, index) => (
-                <FeatureCard key={feature.id} {...feature} index={index} />
-              ))}
-            </div>
-          </section>
-        );
-
-        case "Data Transformation":
-          return (
-            <section id="features" className={layout.section}>
-              <div className={layout.sectionInfo}>
-                <h2 className={styles.heading2}>
-                  Leverage AI, Data Analytics and Automated Signals to Become a Winning Trader
-                </h2>
-                <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
-                Empower your organization with the tools to transform complex data into clear and actionable insights.
-                </p>
-              </div>
-              <div className={`${layout.sectionImg} flex-col`}>
-                {/* If you have specific feature cards for the Data Transformation section, map them here */}
-                {dataTransformationFeatures.map((feature, index) => (
-                  <FeatureCard key={feature.id} {...feature} index={index} />
-                ))}
-              </div>
-            </section>
-          );
-
-          case "Web Development":
-            return (
-              <section id="web-development-features" className={layout.section}>
-                <div className={layout.sectionInfo}>
-                  <h2 className={styles.heading2}>
-                    Crafting Digital Experiences
-                  </h2>
-                  <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
-                    From idea to deployment, we develop web solutions that drive business growth and user engagement.
-                  </p>
-                </div>
-                <div className={`${layout.sectionImg} flex-col`}>
-                  {webDevelopmentFeatures.map((feature, index) => (
-                    <FeatureCard key={feature.id} {...feature} index={index} />
-                  ))}
-                </div>
-              </section>
-            );
-
-        case "Mobile Development":
-          return (
-            <div className="md:py-8">
-              <h2 className="py-10 text-3xl font-medium">
-                These  write themselves
-              </h2>
-            </div>
-          );
-
-          case "Data Analytics":
-            return (
-              <section id="data-analytics-features" className={layout.section}>
-                <div className={layout.sectionInfo}>
-                  <h2 className={styles.heading2}>
-                    Turning Data Into Action
-                  </h2>
-                  <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
-                    Harness the power of data to unlock actionable insights and drive strategic business outcomes.
-                  </p>
-                </div>
-                <div className={`${layout.sectionImg} flex-col`}>
-                  {dataAnalyticsFeatures.map((feature, index) => (
-                    <FeatureCard key={feature.id} {...feature} index={index} />
-                  ))}
-                </div>
-              </section>
-            );
+        featureSet = machineLearningFeatures;
+        sectionTitle = "Harness Machine Learning For Strategic Advantage";
+        sectionParagraph = "Integrate Advanced Machine Learning Capabilities To Unlock Predictive Insights And Automate Complex Processes.";
+        break;
+      case "Data Transformation":
+        featureSet = dataTransformationFeatures;
+        sectionTitle = "Leverage AI and Data Analytics";
+        sectionParagraph = "Empower Your Organization With The Tools To Transform Complex Data Into Clear And Actionable Insights.";
+        break;
+      case "Web Development":
+        featureSet = webDevelopmentFeatures;
+        sectionTitle = "Crafting Digital Experiences";
+        sectionParagraph = "From Idea To Deployment, We Develop Web Solutions That Drive Business Growth And User Engagement.";
+        break;
+      case "Data Analytics":
+        featureSet = dataAnalyticsFeatures;
+        sectionTitle = "Turning Data Into Action";
+        sectionParagraph = "Harness The Power Of Data To Unlock Actionable Insights And Drive Strategic Business Outcomes.";
+        break;
       default:
-        return null;
+        featureSet = [];
+        sectionTitle = "";
+        sectionParagraph = "";
     }
+
+    return featureSet.length > 0 ? (
+      <section id="features" className={layout.section}>
+        <div className={layout.sectionInfo}>
+          <h2 className={styles.heading2}>{sectionTitle}</h2>
+          <p className={`${styles.paragraph} max-w-[470px] mt-5`}>{sectionParagraph}</p>
+        </div>
+        <div className={`${layout.sectionImg} flex-col`}>
+          {featureSet.map((feature, index) => (
+            <FeatureCard key={feature.id} {...feature} index={index} />
+          ))}
+        </div>
+      </section>
+    ) : null;
   };
 
   return (

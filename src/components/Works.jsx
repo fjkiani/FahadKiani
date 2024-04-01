@@ -1,6 +1,8 @@
 import React from "react";
 import Tilt from "react-tilt";
 import { motion } from "framer-motion";
+import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
+
 
 import { styles } from "../styles";
 import { github } from "../assets";
@@ -15,6 +17,8 @@ const ProjectCard = ({
   tags,
   image,
   source_code_link,
+  case_study_link,
+
 }) => {
   return (
     <motion.div variants={( "spring", index * 0.5, 0.75)}>
@@ -26,18 +30,8 @@ const ProjectCard = ({
         }}
         className='bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full'
       >
-        <div className='relative w-full h-[230px]'>
+ {/* Image and links */}
 
-        <div
-              onClick={() => window.open(source_code_link, "_blank")}
-              // className='black-gradient w-10 h-10 rounded-full '
-            >
-          <img
-            src={image}
-            alt='project_image'
-            className='w-full h-full object-cover rounded-2xl'
-          />
-        </div>
 
           {/* <div className='absolute inset-0 flex justify-end m-3 card-img_hover'>
             <div
@@ -51,7 +45,7 @@ const ProjectCard = ({
               />
             </div>
           </div> */}
-        </div>
+   
 
         <div className='mt-5'>
           <h3 className='text-white font-bold text-[24px]sectionHeadText'>{name}</h3>
@@ -68,6 +62,36 @@ const ProjectCard = ({
             </p>
           ))}
         </div>
+        <div className="project-card-container">
+ <div className="button-group">
+
+  
+        <img
+          src={image}
+          alt={name}
+          className='w-full h-full object-cover rounded-2xl'
+        />
+        <div className='overlay flex flex-col justify-end items-start p-4 h-full'>
+          {/* External link - View Source Code */}
+          <a
+            href={source_code_link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className='mb-2 inline-block bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition duration-300'
+          >
+             Deployed Project
+          </a>
+          
+          {/* Internal link - View Case Study */}
+          <Link 
+            to={case_study_link}
+            className='inline-block bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600 transition duration-300'
+          >
+             Case Study
+          </Link>
+        </div>
+      </div>
+      </div>
       </Tilt>
     </motion.div>
   );
@@ -77,7 +101,7 @@ const Works = () => {
   return (
     <>
       <motion.div>
-        <p className={`${styles.sectionSubText} `}>My work</p>
+        <p className={`${styles.sectionSubText} `}>Our work</p>
         <h2 className={`${styles.sectionHeadText}`}>Projects.</h2>
       </motion.div>
 
