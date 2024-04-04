@@ -19,11 +19,9 @@ const App = () => {
       <Route path="/" element={<MainPage />} />
         <Route path="/" element={<MainPage />} />
         {/* <Route path="/Test" element={<Test />} /> */}
-        <Route path="/Healthcare" element={<Healthcare />} />
-        <Route path="/Ecommerce" element={<Ecommerce />} />
-        <Route path="/medicalai" element={<MedicalAI />} />
+        <Route path="/MedicalAI" element={<MedicalAI />} />
         {/* //projects pages */}
-        <Route path="/healthhive" element={<HealthHive />} />
+        <Route path="/HealthHive" element={<HealthHive />} />
 
         {/* Define other routes as needed */}
       </Routes>
