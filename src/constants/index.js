@@ -492,15 +492,23 @@ export const  thirdSectionData = {
 
 //healthHive -> logos 
 export const logosData = [
-  { src: snowflake, alt: "logo 1", link: "https://example.com/link1", className: "w-16 h-16" },
-  { src: numpy, alt: "logo 1", link: "https://example.com/link1", className: "w-16 h-16" },
-  { src: python, alt: "logo 2", link: "https://example.com/link2", className: "w-16 h-16" },
-  { src: vscode, alt: "logo 1", link: "https://example.com/link1", className: "w-16 h-16" },
-  { src: streamlit, alt: "logo 2", link: "https://example.com/link2", className: "w-16 h-16" },
+  { src: snowflake, alt: "logo 1", link: "https://www.snowflake.com/en/data-cloud/snowpark/", className: "w-16 h-16" },
+  { src: numpy, alt: "logo 1", link: "https://numpy.org/", className: "w-16 h-16" },
+  { src: python, alt: "logo 2", link: "https://docs.snowflake.com/en/developer-guide/python-connector/python-connector", className: "w-16 h-16" },
+  { src: vscode, alt: "logo 1", link: "https://docs.snowflake.com/en/user-guide/vscode-ext", className: "w-16 h-16" },
+  { src: streamlit, alt: "logo 2", link: "https://streamlit.io/", className: "w-16 h-16" },
   // ...more logos with their corresponding links
 ];
 
 
+export const logosDataMedicalAI = [
+  { src: snowflake, alt: "logo 1", link: "https://sagemaker.readthedocs.io/en/stable/", className: "w-16 h-16" },
+  { src: numpy, alt: "logo 1", link: "https://numpy.org/", className: "w-16 h-16" },
+  { src: python, alt: "logo 2", link: "https://docs.snowflake.com/en/developer-guide/python-connector/python-connector", className: "w-16 h-16" },
+  { src: vscode, alt: "logo 1", link: "https://docs.snowflake.com/en/user-guide/vscode-ext", className: "w-16 h-16" },
+  { src: streamlit, alt: "logo 2", link: "https://streamlit.io/", className: "w-16 h-16" },
+  // ...more logos with their corresponding links
+];
 
 
 

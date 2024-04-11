@@ -1,6 +1,6 @@
 // src/components/MainPage.js
-import { HHFirstSection, HHSecondSection, HHFeatures, StarsCanvas, HHThirdSection, Contact } from "../components";
-import { projectsDetails, thirdSectionData} from '../constants'; // Make sure to import the correct data
+import { HHFirstSection, HHSecondSection, HHFeatures, StarsCanvas, HHThirdSection, Contact, HHLogoSlider } from "../components";
+import { projectsDetails, thirdSectionData, logosDataMedicalAI} from '../constants'; // Make sure to import the correct data
 import { medicalAIFeatures, featuresDataMedicalAI } from '../components/Projects/HealthHive/constants'; // Adjust the path as necessary
 
 
@@ -15,6 +15,8 @@ const MedicalAI = () => {
       <HHFirstSection projectDetails={projectsDetails.medicalAI} />  
       <HHSecondSection featureData={medicalAIFeatures}/>
       <HHFeatures data={featuresDataMedicalAI}/>    
+      {/* <HHLogoSlider logos={logosDataMedicalAI}/> */}
+
       <Contact/>
       <StarsCanvas />
     </div>
