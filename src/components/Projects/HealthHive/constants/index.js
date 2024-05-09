@@ -143,7 +143,7 @@ export const medicalAIFeatures = {
       },
     ],
     title: "Informing Healthcare Decisions with Data",
-    paragraph: "HealthHive employs data analytics to not only understand the present state of patient health but also to anticipate future health trends and outcomes."
+    paragraph: "MedicalAI employs data analytics to not only understand the present state of patient health but also to anticipate future health trends and outcomes."
   },
 };
 

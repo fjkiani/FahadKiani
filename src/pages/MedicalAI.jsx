@@ -15,8 +15,7 @@ const MedicalAI = () => {
       <HHFirstSection projectDetails={projectsDetails.medicalAI} />  
       <HHSecondSection featureData={medicalAIFeatures}/>
       <HHFeatures data={featuresDataMedicalAI}/>    
-      {/* <HHLogoSlider logos={logosDataMedicalAI}/> */}
-
+ 
       <Contact/>
       <StarsCanvas />
     </div>
