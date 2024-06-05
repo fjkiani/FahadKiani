@@ -41,90 +41,46 @@ export const items: MenuItem[] = [
     title: "Use Cases",
     menu: "use-cases",
     options: [
+      {
+        label: "Forecasting",
+        emoji: <UserPlus className="text-orange-500" />,
+        href: "/healthhive",
+      },
+      {
+        label: "Healthcare",
+        emoji: <Code className="text-green-500" />,
+        href: "/medicalai",
+      },
+      {
+        label: "Dashboards",
+        emoji: <Sparkles className="text-blue-500" />,
+        href: "/datadashboard",
+      },
       // {
       //   label: "Ecommerce",
       //   emoji: <UserPlus className="text-orange-500" />,
-      //   href: "/Ecommerce",
+      //   href: "/ecommerce",
       // },
       // {
-      //   label: "Healthcare",
-      //   emoji: <DollarSign className="text-green-500" />,
-      //   href: "/Healthcare",
-      // },
-      // {
-      //   label: "Engineering",
-      //   emoji: <Code className="text-blue-500" />,
-      //   href: "/engineering",
-      // },
-      // {
-      //   label: "Design",
-      //   emoji: <PaintBucket className="text-indigo-500" />,
-      //   href: "/design",
-      // },
-      // {
-      //   label: "Marketing",
-      //   emoji: <BarChart className="text-rose-500" />,
-      //   href: "/marketing",
-      // },
-      // {
-      //   label: "Customer Support",
-      //   emoji: <Headphones className="text-orange-500" />,
-      //   href: "/customer-support",
-      // },
-      // {
-      //   label: "Product Management",
-      //   emoji: <Settings className="text-gray-500" />,
-      //   href: "/product-management",
-      // },
-      // {
-      //   label: "Education",
+      //   label: "Chatbots",
       //   emoji: <GraduationCap className="text-green-500" />,
-      //   href: "/education",
+      //   href: "/RDChat",
       // },
     ],
   },
 
-  // {
-  //   title: "For Business",
-  //   menu: "for-business",
-  //   options: [
-  //     {
-  //       label: "Bird AI",
-  //       emoji: <Sparkles className="text-indigo-500" />,
-  //       href: "/bird-ai",
-  //     },
-  //     {
-  //       label: "Enterprise",
-  //       emoji: <Building2 className="text-green-500" />,
-  //       href: "/enterprise",
-  //     },
-  //     {
-  //       label: "Bird HQ",
-  //       emoji: <Home className="text-blue-500" />,
-  //       href: "/",
-  //     },
-  //     {
-  //       label: "Customers",
-  //       emoji: <Smile className="text-indigo-500" />,
-  //       href: "/",
-  //     },
-  //     {
-  //       label: "Security",
-  //       emoji: <Lock className="text-rose-500" />,
-  //       href: "/",
-  //     },
-  //     {
-  //       label: "Video Hosting",
-  //       emoji: <Camera className="text-orange-500" />,
-  //       href: "/",
-  //     },
-  //     {
-  //       label: "Video Library",
-  //       emoji: <LibrarySquare className="text-amber-500" />,
-  //       href: "/",
-  //     },
-  //   ],
-  // },
+  {
+    title: "For Business",
+    menu: "for-business",
+    options: [
+      {
+        label: "Contact",
+        emoji: <Sparkles className="text-indigo-500" />,
+        href: "/Contact",
+      },
+      
+    ],
+  },
   // {
   //   title: "Resources",
   //   menu: "resources",
