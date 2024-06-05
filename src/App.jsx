@@ -28,6 +28,7 @@ const App = () => {
         <Route path="/HealthHive" element={<HealthHive />} />
         <Route path="/DataDashboard" element={<DataDashboard />} />
         <Route path="/Contact" element={<Contact />} />
+        <Route path="/ecommerce" element={<Ecommerce />} />
 
 
 

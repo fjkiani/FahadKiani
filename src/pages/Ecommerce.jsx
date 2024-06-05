@@ -1,22 +1,26 @@
 // src/components/MainPage.js
-import { About, Contact, Experience, Feedbacks, Hero, Navbar, Tech, Works, StarsCanvas, ComputersCanvas, Skills, HeroSection, Footer, Header,   GetStarted, Explore, Insights, Hero2, Brands } from "../components";
+import { HHFirstSection, HHSecondSection, HHFeatures, StarsCanvas, HHThirdSection, Contact, HHLogoSlider, Header } from "../components";
+import {thirdSectionData, logosData} from '../constants'; // Make sure to import the correct data
+import { healthHiveAdCampaignFeatures, featuresDataHealthHive, projectsDetails } from '../components/Projects/HealthHive/constants'; // Adjust the path as necessary
+
+
 // export { Insights } from './Insights';
 
 
-const SamplePage = () => {
+const HealthHive = () => {
   return (
     <div className='relative z-0 bg-primary'>
-      <Feedbacks />
       <div className="gradient-03 z-0" />
-      <Tech/>
-      <Brands/>
-      {/* <Explore /> */}
-      {/* <Works /> */}
-      <StarsCanvas /> Rendered on every page
-
-
+      <HHFirstSection projectDetails={projectsDetails.healthHive} />
+      <HHSecondSection featureData={healthHiveAdCampaignFeatures}/>
+      <HHFeatures data={featuresDataHealthHive}/>    
+      {/* <HHThirdSection sectionData={thirdSectionData}/>  */}
+      <HHLogoSlider logos={logosData}/>
+      <Contact/>
+      
+      <StarsCanvas />
     </div>
   );
 };
 
-export default SamplePage;
+export default HealthHive;

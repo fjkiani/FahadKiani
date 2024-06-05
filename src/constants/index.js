@@ -46,9 +46,6 @@ import {
   snow
 } from "../assets";
 
-//videos
-import HHVideo from '../assets/videos/HH.mp4';
-import MedicalAI from '../assets/videos/medical-ai.mp4';
 
 //partner/integration logos 
 

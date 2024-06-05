@@ -3,12 +3,13 @@ import { mobile, backend, creator, web, javascript, typescript, html, css, react
 
 import { DollarSign, Braces, MessageCircle, PencilLine, 
 //healthHive's icons
-HeartPulse,Microscope, DatabaseZap, Brain, Infinity, LockKeyhole
+HeartPulse,Microscope, DatabaseZap, Brain, Infinity, LockKeyhole, CircleDollarSign, CandlestickChart, Activity, HandMetal, SquareArrowUpRight
 } from "lucide-react";
 
 //videos
 import HHVideo from '../../../../assets/videos/HH.mp4';
 import MedicalAI from '../../../../assets/videos/medical-ai.mp4';
+import DataDashboard from '../../../../assets/videos/analytics.mp4';
 
 
 
@@ -214,6 +215,87 @@ export const featuresDataHealthHive = [
 ];
 
 
+//dataDashboard features
+// Project Benefits and Features
+
+export const dataDashboardFeatures = [
+  {
+    Icon: SquareArrowUpRight,
+    name: "Revenue and Expenses Tracking",
+    title: "Comprehensive visualization of revenue and expenses",
+    description: "Provides a detailed analysis of revenue and expenses, helping businesses make informed financial decisions.",
+    features: [
+      "increase in financial accuracy",
+      "Identifies key trends and anomalies",
+      "Monthly tracking of financial performance",
+      "Supports strategic financial planning",
+    ],
+  },
+  {
+    Icon: HandMetal,
+    name: "Profit and Revenue Analysis",
+    title: "Detailed profit and revenue analysis",
+    description: "Offers insights into profit and revenue trends, aiding in the optimization of business operations.",
+    features: [
+      "improvement in profit margins",
+      "Tracks revenue and profit fluctuations",
+      "Helps in identifying high-performing segments",
+      "Supports long-term financial strategies",
+    ],
+  },
+  {
+    Icon: CandlestickChart,
+    name: "Expenses",
+    title: "Insightful comparison of operational and non-operational expenses",
+    description: "Enables businesses to optimize their expenses by overseeing all transactions.",
+    features: [
+      "Optimizes operational cost management",
+      "Provides actionable insights for cost-saving",
+      "Helps in budgeting and financial planning",
+    ],
+  },
+  {
+    Icon: LockKeyhole,
+    name: "Inventory Management",
+    title: "Detailed list of products",
+    description: "Provides an exhaustive list of products, their expenses, and prices to facilitate inventory management.",
+    features: [
+      "All products tracked",
+      "Supports inventory optimization",
+      "Keep track of your inventory",
+      "Aids in inventory cost management",
+    ],
+  },
+  {
+    Icon: Activity,
+    name: "Expense Breakdown By Category",
+    title: "Categorical breakdown of expenses",
+    description: "Offers a detailed breakdown of expenses by category to optimize budget allocation.",
+    features: [
+      "improvement in expense management",
+      "Helps in identifying high-cost areas",
+      "Supports budget optimization",
+      "Provides detailed expense insights",
+    ],
+  },
+  {
+    Icon: LockKeyhole,
+    name: "Revenue and Predictions",
+    title: "Revenue predictions based on historical data",
+    description: "Uses machine learning regression models to predict future revenue trends, aiding in strategic planning.",
+    features: [
+      "Accurate revenue predictions",
+      "Supports strategic financial planning",
+      "Helps in forecasting and budgeting",
+      "Provides data-driven insights",
+    ],
+  },
+];
+
+
+
+
+
 
 
 //MedicalAI's outcomes
@@ -276,16 +358,24 @@ export const featuresDataMedicalAI = [
       "Using AWS's compliance certifications and attestations, HealthHive meets international compliance standards",
     ],
   },
+
+  
+
+
 ];
+
+
+
+
 
 
 //Case Study Components 
 export const projectsDetails = {
-  dataDashboard: {
+  healthHive: {
     title: "Forecaste ROI",
     name: "Data Dashboard",
     subtitle: "Improved ROI forecast by 400%+ ",
-    description: "The interactive web application built with Streamlit visualizes these predictions, allowing users to experiment with budget allocations and see their potential impact on ROI in real-time. Predict ROI based on the input budgets for search engines, social media, video, and email utilizing a Linear Regression model trained on historical data",
+    description: "This interactive web application built with Streamlit visualizes these predictions, allowing users to experiment with budget allocations and see their potential impact on ROI in real-time. Predict ROI based on the input budgets for search engines, social media, video, and email utilizing a Linear Regression model trained on historical data",
     videoSrc: HHVideo,
     benefits: [
       "To record presentations",
@@ -298,6 +388,18 @@ export const projectsDetails = {
     subtitle: "Medical Diagnostics with AI",
     description: "Built on Sagemaker, React and S3.",
     videoSrc: MedicalAI,
+    benefits: [
+      "To record presentations",
+      "To deliver better feedback",
+      "To share knowledge",
+    ],
+  },
+
+  dataDashboard: {
+    title: "Monitor your Key Performance Index (KPIs)",
+    subtitle: "One Dashboard to optimize your business",
+    description: "Offers insights into profit and revenue trends, aiding in the optimization of business operations.",
+    videoSrc: DataDashboard,
     benefits: [
       "To record presentations",
       "To deliver better feedback",
@@ -381,7 +483,7 @@ export const projects = [
   {
     name: "Forecaste ROI",
     description:
-      "The interactive web application built with Streamlit visualizes predictions, allowing users to experiment with budget allocations and see their potential impact on ROI in real-time based on the input budgets for search engines, social media, video, and email trained on historical data",
+      "The interactive web application built with Streamlit visualizes these predictions, allowing users to experiment with budget allocations and see their potential impact on ROI in real-time. Predict ROI based on the input budgets for search engines, social media, video, and email utilizing a Linear Regression model trained on historical data",
     tags: [
       {
         name: "Streamlit",
