@@ -6,7 +6,9 @@ import { DollarSign, Braces, MessageCircle, PencilLine,
 HeartPulse,Microscope, DatabaseZap, Brain, Infinity, LockKeyhole
 } from "lucide-react";
 
-
+//videos
+import HHVideo from '../../../../assets/videos/HH.mp4';
+import MedicalAI from '../../../../assets/videos/medical-ai.mp4';
 
 
 
@@ -275,3 +277,216 @@ export const featuresDataMedicalAI = [
     ],
   },
 ];
+
+
+//Case Study Components 
+export const projectsDetails = {
+  dataDashboard: {
+    title: "Forecaste ROI",
+    name: "Data Dashboard",
+    subtitle: "Improved ROI forecast by 400%+ ",
+    description: "The interactive web application built with Streamlit visualizes these predictions, allowing users to experiment with budget allocations and see their potential impact on ROI in real-time. Predict ROI based on the input budgets for search engines, social media, video, and email utilizing a Linear Regression model trained on historical data",
+    videoSrc: HHVideo,
+    benefits: [
+      "To record presentations",
+      "To deliver better feedback",
+      "To share knowledge",
+    ],
+  },
+  medicalAI: {
+    title: "MedicalAI's Case Study",
+    subtitle: "Medical Diagnostics with AI",
+    description: "Built on Sagemaker, React and S3.",
+    videoSrc: MedicalAI,
+    benefits: [
+      "To record presentations",
+      "To deliver better feedback",
+      "To share knowledge",
+    ],
+  },
+  // Define other projects similarly...
+};
+
+
+//Projects
+
+
+export const projects = [
+  {
+    name: "Data Dashboard",
+    description:
+      "Interactive dashboard to visualize key performance indicators (KPIs), product performance, and transaction data. The application is designed to visualize and interact with machine learning model predictions and their performance metrics.",
+    tags: [
+      {
+        name: "Vite.js",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Machine Learning",
+        color: "green-text-gradient",
+      },
+      {
+        name: "TypeScript",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Snowflake",
+        color: "green-text-gradient",
+      },
+      {
+        name: "S3",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "AWS",
+        color: "blue-text-gradient",
+      },
+    ],
+    image: ml,
+    source_code_link: "https://ml-your-business.netlify.app/",
+    case_study_link: "/datadashboard"
+    
+  },
+  {
+    name: "Pneumonia detection with AI ",
+    description:
+      " Full-Stack application built with interactive tools for uploading, viewing, and analyzing medical images with AI-powered insights that enable diagnostic results within seconds with over 80% accuracy ",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "AWS",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Sagemaker",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "S3",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Supervised Machine Learning",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: medicai,
+    source_code_link: "https://medicalai.world/",
+    case_study_link: "/medicalai"
+
+  },
+  {
+    name: "Forecaste ROI",
+    description:
+      "The interactive web application built with Streamlit visualizes predictions, allowing users to experiment with budget allocations and see their potential impact on ROI in real-time based on the input budgets for search engines, social media, video, and email trained on historical data",
+    tags: [
+      {
+        name: "Streamlit",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Machine Learning",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Snowflake",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: iphone,
+    source_code_link: "https://medicalai.world/",
+    case_study_link: "/healthhive"
+  },
+
+  {
+    name: "GPT 4 Summarizer",
+    description:
+      "GPT summarizer built in react that uses OpenAI's Generative Pretrained Transformer (GPT) models to generate concise summaries of larger text inputs.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Machine Learning",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Open-AI",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: s,
+    source_code_link: "https://gpt-summarizer-api.netlify.app/",
+  
+  },
+  
+
+  {
+    name: "Club Billionaire",
+    description:
+      "Discord powered server built and integrated with api's to generate real-time new york stock market (NYSE) data to empower retail investors with insights ",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "restapi",
+        color: "green-text-gradient",
+      },
+      {
+        name: "discord",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: cb786,
+    source_code_link: "https://clubillionaire.life",
+  },
+ 
+  {
+    name: "Luton Airport Transfer",
+    description:
+      "Car booking app for a taxi company in UK built with Google maps API. ",
+    tags: [
+      {
+        name: "nextjs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "noSQL",
+        color: "green-text-gradient",
+      },
+      {
+        name: "MERN",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "MongoDB",
+        color: "blue-text-gradient",
+      },
+    ],
+    image: luton,
+    source_code_link: "https://lat-taxi.com/",
+  },
+  {
+    name: "Insaf.world",
+    description:
+      "React web app with Sanity.io CMS, achieving a 90% faster content update time and a 80% boost in web performance.",
+    tags: [
+      {
+        name: "nextjs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "sanity.io",
+        color: "green-text-gradient",
+      },
+    ],
+    image: insaf,
+    source_code_link: "https://insaf.vercel.app/",
+  }
+]

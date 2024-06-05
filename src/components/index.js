@@ -24,12 +24,14 @@ import Insights from "../sections/Insights";
 //ecommerce page
 import Hero2 from "./Ecommerce/Hero2";
 import Brands from "./Ecommerce/Brands";
+
+
 //healthcare page 
 import FirstSection from "../components/Healthcare/_components/first-section";
 import SecondSection2 from "../components/Healthcare/_components/second-section";
 
 
-//projects -> HealthHive
+//projects -> HealthHive // reusable components 
 import HHFirstSection from "../components/Projects/HealthHive/first-section";
 import HHFeatures from "../components/Projects/HealthHive/features";
 import HHSecondSection from "../components/Projects/HealthHive/second-section";
