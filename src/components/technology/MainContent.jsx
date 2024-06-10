@@ -37,11 +37,11 @@ export default function MainContent() {
         changeSelectedTech={changeSelectedTech}
       />
       <InfoSection selectedTech={selectedTech} description={description} />
-      {/* <HeroImage
+      <HeroImage
         selectedTech={selectedTech}
         portraitImg={portraitImgUrl}
         landscapeImg={landscapeImgUrl}
-      /> */}
+      />
     </div>
   );
 }
