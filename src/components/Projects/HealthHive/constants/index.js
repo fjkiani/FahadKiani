@@ -582,7 +582,9 @@ export const projects = [
     ],
     image: ml,
     source_code_link: "https://ml-your-business.netlify.app/",
-    case_study_link: "/datadashboard"
+    case_study_link: "/datadashboard",
+    isNew: true,
+
     
   },
   {
@@ -699,7 +701,7 @@ export const projects = [
     ],
     image: s,
     source_code_link: "https://gpt-summarizer-api.netlify.app/",
-    isNew: false
+    isNew: true
 
   },
   
@@ -724,35 +726,35 @@ export const projects = [
     ],
     image: cb786,
     source_code_link: "https://clubillionaire.life",
-    isNew: false
+    isNew: true
 
   },
  
-  {
-    name: "Luton Airport Transfer",
-    description:
-      "Car booking app for a taxi company in UK built with Google maps API. ",
-    tags: [
-      {
-        name: "nextjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "noSQL",
-        color: "green-text-gradient",
-      },
-      {
-        name: "MERN",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "MongoDB",
-        color: "blue-text-gradient",
-      },
-    ],
-    image: luton,
-    source_code_link: "https://lat-taxi.com/",
-  },
+  // {
+  //   name: "Luton Airport Transfer",
+  //   description:
+  //     "Car booking app for a taxi company in UK built with Google maps API. ",
+  //   tags: [
+  //     {
+  //       name: "nextjs",
+  //       color: "blue-text-gradient",
+  //     },
+  //     {
+  //       name: "noSQL",
+  //       color: "green-text-gradient",
+  //     },
+  //     {
+  //       name: "MERN",
+  //       color: "pink-text-gradient",
+  //     },
+  //     {
+  //       name: "MongoDB",
+  //       color: "blue-text-gradient",
+  //     },
+  //   ],
+  //   image: luton,
+  //   source_code_link: "https://lat-taxi.com/",
+  // },
   {
     name: "Insaf.world",
     description:

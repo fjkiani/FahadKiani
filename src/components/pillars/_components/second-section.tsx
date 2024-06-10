@@ -116,13 +116,13 @@ const SecondSection = () => {
     <div className="h-auto lg:h-96">{renderContent()}</div>
   </div>
 
-  <div className="w-[80%] lg:w-[20%] h-auto mx-auto lg:mx-0">
+  {/* <div className="w-[80%] lg:w-[20%] h-auto mx-auto lg:mx-0">
     <img
       src="/get-started.png"
       alt="Get Started"
       className="w-full h-full object-contain"
     />
-  </div>
+  </div> */}
 </div>
   );
 };
