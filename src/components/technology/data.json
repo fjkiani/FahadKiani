@@ -83,16 +83,16 @@
       {
         "name": "Technical Expertise",
         "images": {
-          "portrait": "../../../../public/planet-02.png",
-          "landscape":"../../../../public/planet-02.png"
+          "portrait": "/planet-02.png",
+          "landscape":"/planet-02.png"
         },
         "description": "Our deep technical expertise ensures that your business is leveraging the latest technological advancements to stay ahead of the curve. By partnering with us, you gain access to a team that is proficient in modern technologies empowering you to innovate and outperform competitors"
       },
       {
         "name": "Proven Success",
         "images": {
-          "portrait": "../../../../public/planet-09.png",
-          "landscape":"../../../../public/planet-09.png"
+          "portrait": "/planet-09.png",
+          "landscape":"/planet-09.png"
         },
         "description": "Our proven track record of successful project delivery reassures you that your technological investments are in reliable hands. With our history of meeting and exceeding project goals, your business can expect dependable, high-quality solutions that achieve real-world results"
       },
@@ -100,8 +100,8 @@
       {
         "name": "End-to-End ",
         "images": {
-          "portrait": "../../../../public/planet-08.png",
-          "landscape":"../../../../public/planet-08.png"
+          "portrait": "/planet-08.png",
+          "landscape":"/planet-08.png"
         },
         "description": "Choosing our end-to-end services means you have a single, accountable partner from project inception to completion and beyond.  We free you to focus on core business activities while we ensure that your IT infrastructure is robust, scalable, and perfectly aligned with your business objectives."
       }
