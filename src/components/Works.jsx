@@ -71,7 +71,7 @@ const ProjectCard = ({
   );
 };
 
-const Works = (index) => {
+const Works = () => {
   const [showAll, setShowAll] = useState(false);  // Controls whether to show all projects or only new ones
 
   // Filter projects based on 'isNew' attribute or show all if 'showAll' is true
@@ -79,8 +79,6 @@ const Works = (index) => {
 
   return (
     <>
-      <motion.div
-      variants={fadeIn("right", "spring", index * 0.5, 0.75)}>
       <motion.div>
         <p className={`${styles.sectionSubText}`}>Our work</p>
         <h2 className={`${styles.sectionHeadText}`}>Projects.</h2>
@@ -109,9 +107,7 @@ const Works = (index) => {
           {showAll ? "Show Less" : "View All"}
         </button>
       </div>
-      </motion.div>
     </>
-    
   );
 };
 
