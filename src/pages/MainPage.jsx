@@ -1,5 +1,5 @@
 // src/components/MainPage.js
-import { About, Contact, Experience, Feedbacks, Hero, Navbar, Tech, Works, StarsCanvas, ComputersCanvas, Skills, HeroSection, Footer, Header,   GetStarted, Explore, Insights, SecondSection } from "../components";
+import { About, Contact, Experience, Feedbacks, Hero, Navbar, Tech, Works, StarsCanvas, ComputersCanvas, Skills, HeroSection, Footer, Header,   GetStarted, Explore, Insights, SecondSection, TechnologySection } from "../components";
 // export { Insights } from './Insights';
 
 
@@ -11,6 +11,7 @@ const MainPage = () => {
       <Tech />
       <Header/>
       <SecondSection/>
+      <TechnologySection/>
       {/* <GetStarted/> */}
       {/* <Feedbacks /> */}
       <div className="gradient-03 z-0" />

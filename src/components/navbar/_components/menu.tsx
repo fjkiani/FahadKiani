@@ -61,11 +61,11 @@ export const items: MenuItem[] = [
       //   emoji: <UserPlus className="text-orange-500" />,
       //   href: "/ecommerce",
       // },
-      // {
-      //   label: "Chatbots",
-      //   emoji: <GraduationCap className="text-green-500" />,
-      //   href: "/RDChat",
-      // },
+      {
+        label: "Generative AI",
+        emoji: <GraduationCap className="text-green-500" />,
+        href: "/RDChat",
+      },
     ],
   },
 

@@ -1,4 +1,5 @@
 import { EarthCanvas, BallCanvas, ComputersCanvas, StarsCanvas } from './canvas';
+//components
 import Hero from "./Hero";
 import Navbar from "./navbar/navbar";
 import About from "./About";
@@ -8,6 +9,8 @@ import Works from "./Works";
 import Feedbacks from "./Feedbacks";
 import Contact from "./Contact";
 import Earth from "./canvas/Earth";
+//sections
+import TechnologySection from './technology/TechnologySection'
 import CanvasLoader from "./Loader";
 import HeroTyper from "./HeroTyper";
 import Skills from "./Skills";
@@ -24,6 +27,7 @@ import Insights from "../sections/Insights";
 //ecommerce page
 import Hero2 from "./Ecommerce/Hero2";
 import Brands from "./Ecommerce/Brands";
+
 
 
 //healthcare page 
@@ -98,6 +102,7 @@ export {
   HHFeatures,
   HHSecondSection,
   HHThirdSection,
+  TechnologySection,
   //medicalAI
   //loogos slider
   HHLogoSlider

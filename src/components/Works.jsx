@@ -71,22 +71,23 @@ const ProjectCard = ({
   );
 };
 
-const Works = () => {
-  const [showAll, setShowAll] = useState(false);
+const Works = (index) => {
+  const [showAll, setShowAll] = useState(false);  // Controls whether to show all projects or only new ones
 
-  const displayedProjects = showAll ? projects : projects.slice(0, 3);
+  // Filter projects based on 'isNew' attribute or show all if 'showAll' is true
+  const displayedProjects = showAll ? projects : projects.filter(project => project.isNew);
 
   return (
     <>
+      <motion.div
+      variants={fadeIn("right", "spring", index * 0.5, 0.75)}>
       <motion.div>
-        <p className={`${styles.sectionSubText} `}>Our work</p>
+        <p className={`${styles.sectionSubText}`}>Our work</p>
         <h2 className={`${styles.sectionHeadText}`}>Projects.</h2>
       </motion.div>
 
       <div className='w-full flex'>
-        <motion.p
-          className='mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]'
-        >
+        <motion.p className='mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]'>
           Following projects showcase skills and experience through
           real-world examples of our work. They reflect our
           ability to solve complex problems, work with different technologies,
@@ -108,8 +109,12 @@ const Works = () => {
           {showAll ? "Show Less" : "View All"}
         </button>
       </div>
+      </motion.div>
     </>
+    
   );
 };
 
 export default SectionWrapper(Works, "works");
+
+

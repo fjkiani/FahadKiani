@@ -31,6 +31,8 @@ import {
   gfbu,
   insaf,
   medicai,
+  //test
+  // rdChatImg,
   joy,
   gpt,
   s,
@@ -43,7 +45,7 @@ import {
   python,
   vscode,
   snow_stream,
-  snow
+  snow,
 } from "../assets";
 
 
@@ -346,12 +348,7 @@ export const dataAnalyticsFeatures = [
     title: 'Data Processing',
     content: 'Efficiently process large volumes of data to extract meaningful insights.'
   },
-  {
-    id: 'dataAnalytic3',
-    icon: mongodb,
-    title: 'Data Visualization',
-    content: 'Transform complex data sets into clear, compelling, and interactive visualizations.'
-  },
+
   // ...other features
 ];
 

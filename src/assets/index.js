@@ -49,6 +49,8 @@ import ml from "./img/ml.png";
 import medicai from "./img/medicai.png";
 import iphone from "./img/iphone.png";
 import snow_stream from "./img/snow_stream.png";
+import rdChatImg from "./img/rdChatImg.png";
+
 
 
 //partner icons
@@ -97,6 +99,7 @@ export {
   tripguide,
   web2,
   //work icons
+  rdChatImg,
   kb,
   cb786,
   gfbu,

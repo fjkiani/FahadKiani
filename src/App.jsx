@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import MainPage from './pages/MainPage'; // Adjust the import path as needed
 // import Test2 from './pages/Test2';
 // import Test from './pages/Test';
+import './styles/App.scss';
 
 
 //Projects pages
@@ -10,6 +11,7 @@ import Ecommerce from './pages/Ecommerce';
 import Healthcare from './pages/Healthcare';
 import MedicalAI from './pages/MedicalAI';
 import DataDashboard from './pages/DataDashboard';
+import RDChat from './pages/RDChat';
 
 
 // import eCommerce from './pages/eCommerce';
@@ -28,7 +30,7 @@ const App = () => {
         <Route path="/HealthHive" element={<HealthHive />} />
         <Route path="/DataDashboard" element={<DataDashboard />} />
         <Route path="/Contact" element={<Contact />} />
-        <Route path="/ecommerce" element={<Ecommerce />} />
+        <Route path="/RDChat" element={<RDChat />} />
 
 
 

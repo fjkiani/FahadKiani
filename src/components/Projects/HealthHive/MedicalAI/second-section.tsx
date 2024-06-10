@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import styled, { css, keyframes } from 'styled-components';
 import { layout, styles } from '../../../../styles';
 import FeatureCard from '../FeatureCard';
-import { dataAnalyticsFeatures, dataTransformationFeatures, machineLearningFeatures, webDevelopmentFeatures } from '../../../../constants';
 
 const fadeInOut = keyframes`
   0%, 100% { opacity: 0; }
@@ -55,27 +54,6 @@ const SecondSection = () => {
   display: inline-block;
 `;
 
-
-  const featureSets = {
-    "Machine Learning": machineLearningFeatures,
-    "Data Transformation": dataTransformationFeatures,
-    "Web Development": webDevelopmentFeatures,
-    "Data Analytics": dataAnalyticsFeatures,
-  };
-
-  const titles = {
-    "Machine Learning": "MedicalAI's decreased their diagnostic",
-    "Data Transformation": "Leverage AI and Data Analytics",
-    "Web Development": "Crafting Digital Experiences",
-    "Data Analytics": "Turning Data Into Action",
-  };
-
-  const paragraphs = {
-    "Machine Learning": "Integrate Advanced Machine Learning Capabilities To Unlock Predictive Insights And Automate Complex Processes.",
-    "Data Transformation": "Empower Your Organization With The Tools To Transform Complex Data Into Clear And Actionable Insights.",
-    "Web Development": "From Idea To Deployment, We Develop Web Solutions That Drive Business Growth And User Engagement.",
-    "Data Analytics": "Harness The Power Of Data To Unlock Actionable Insights And Drive Strategic Business Outcomes.",
-  };
 
   const renderContent = () => {
     const featureSet = featureSets[activeTitle];

@@ -1,5 +1,5 @@
 // constants.js or wherever you prefer to keep your constants
-import { mobile, backend, creator, web, javascript, typescript, html, css, reactjs, redux, tailwind, nodejs, mongodb, git, figma, docker, meta, imedicare, starbucks, tesla, shopify, jobit, tripguide, threejs, web2, cb786, gfbu, insaf, medicai, joy, gpt, s, ml, iphone, luton, snowflake, streamlit, numpy, python, vscode, snow_stream, snow } from "../../../../assets";
+import { mobile, backend, creator, web, javascript, typescript, html, css, reactjs, redux, tailwind, nodejs, mongodb, git, figma, docker, meta, imedicare, starbucks, tesla, shopify, jobit, tripguide, threejs, web2, cb786, gfbu, insaf, medicai, joy, gpt, s, ml, iphone, luton, snowflake, streamlit, numpy, python, vscode, snow_stream, snow, rdChatImg } from "../../../../assets";
 
 import { DollarSign, Braces, MessageCircle, PencilLine, 
 //healthHive's icons
@@ -10,8 +10,10 @@ HeartPulse,Microscope, DatabaseZap, Brain, Infinity, LockKeyhole, CircleDollarSi
 import HHVideo from '../../../../assets/videos/HH.mp4';
 import MedicalAI from '../../../../assets/videos/medical-ai.mp4';
 import DataDashboard from '../../../../assets/videos/analytics.mp4';
+import rdChat from '../../../../assets/videos/rdChat.mp4';
 
 
+// Project Benefits and Features
 
 export const healthHiveAdCampaignFeatures = {
   "ROI Optimization Dashboard": {
@@ -69,7 +71,6 @@ export const healthHiveAdCampaignFeatures = {
     paragraph: "HealthHive's ROI dashboard not only serves as a tool for analyzing ad spend efficiency but also as a platform for interactive exploration and collaboration, making complex data accessible and actionable for all team members."
   },
 };
-
 
 
 
@@ -215,9 +216,8 @@ export const featuresDataHealthHive = [
 ];
 
 
-//dataDashboard features
-// Project Benefits and Features
 
+//dataDashboard features
 export const dataDashboardFeatures = [
   {
     Icon: SquareArrowUpRight,
@@ -292,10 +292,133 @@ export const dataDashboardFeatures = [
   },
 ];
 
+export const rdChatFeatures = {
+  "Real-Time Interaction": {
+    features: [
+      {
+        id: 'rti1',
+        icon: backend,
+        title: 'Instantaneous Response Handling',
+        content: 'Utilizes state-of-the-art technology to allow real-time interactions with Wikipedia, delivering immediate answers to users’ queries.'
+      },
+      {
+        id: 'rti2',
+        icon: backend,
+        title: 'Real-Time Data Streaming',
+        content: 'Employs real-time data streaming to update the knowledge base with the newest Wikipedia articles and revisions, ensuring up-to-date information is always available.'
+      }
+    ],
+    title: "Enhanced User Interaction and Data Timeliness",
+    paragraph: "R&D Chat revolutionizes user engagement by providing instantaneous communication and continuous data updates, ensuring information is both current and accurate."
+  },
+  "Retrieval-Augmented Generation (RAG)": {
+    features: [
+      {
+        id: 'ga1',
+        icon: web,
+        title: 'Worldwide Information Accessibility',
+        content: 'Provides users worldwide access to a broad range of knowledge from Wikipedia’s extensive database.'
+      },
+      {
+        id: 'ga2',
+        icon: web,
+        title: 'Multi-Language Support',
+        content: 'Supports multiple languages, making knowledge accessible to more users and democratizing information across the globe.'
+      }
+    ],
+    title: "Broadening the Reach of Information",
+    paragraph: "R&D Chat expands access to information globally, supporting multiple languages and ensuring that users from all over the world can tap into the wealth of knowledge available on Wikipedia."
+  },
 
+  "Natural Language Processing ": {
+    features: [
+      {
+        id: 'ati1',
+        icon: web, // Replace with an appropriate icon that represents advanced technology like AI
+        title: 'Cutting-Edge NLP and ML',
+        content: 'Integrates the latest advancements in natural language processing and machine learning to understand and generate responses.'
+      },
+      {
+        id: 'ati2',
+        icon: web, // Replace with an appropriate icon that represents advanced technology like AI
+        title: 'Open Source Development',
+        content: 'Encourages the developer community to engage and contribute to the R&D Chat project, fostering innovation and continuous improvement.'
+      }
+    ],
+    title: "Leveraging High-Tech Tools for Improved Communication",
+    paragraph: "R&D Chat employs advanced technologies such as AI, machine learning, and open-source collaboration to enhance chatbot intelligence and user interaction capabilities."
+  }
+};
 
-
-
+//R&D chat outcomes
+export const outcomesRdChat = [
+  {
+    Icon: LockKeyhole, // Replace with an appropriate icon for real-time communication
+    name: "Real-Time Communication",
+    title: "Instant Interaction with Up-to-Date Data",
+    description: "R&D Chat provides immediate responses, leveraging real-time streaming to ensure that information is current and relevant.",
+    features: [
+      "Enhanced user satisfaction with instant feedback",
+      "Reduction in wait times for information retrieval",
+      "Ability to handle multiple simultaneous queries efficiently",
+    ],
+  },
+  {
+    Icon: LockKeyhole, // Replace with an icon that represents data handling or processing
+    name: "Data Processing Efficiency",
+    title: "Optimized Data Ingestion and Processing",
+    description: "Employs an advanced data pipeline using Python and Next.js for efficient data handling and query processing.",
+    features: [
+      "Accelerated data processing capabilities",
+      "Improved system performance even under high load",
+      "Scalable infrastructure that grows with user demand",
+    ],
+  },
+  {
+      Icon: LockKeyhole, // Replace with an icon for AI or machine learning
+      name: "Intelligent Response Generation",
+      title: "Enhanced Quality of Conversations",
+      description: "Utilizes AI models from OpenAI and Cohere to deliver contextually aware and engaging conversations.",
+      features: [
+          "Significant improvement in response relevance and detail",
+          "Continuous learning from interactions to improve accuracy",
+          "Capability to understand and generate complex conversational nuances",
+      ],
+  },
+  {
+      Icon: LockKeyhole, // Replace with an icon that represents synchronization or updates
+      name: "Continuous Content Updates",
+      title: "Always Current with the Latest Information",
+      description: "R&D Chat updates its knowledge base in real time, ensuring that all information provided to users is accurate and up-to-date.",
+      features: [
+          "Automatic updating of data reduces manual oversight",
+          "Ensures high accuracy and reliability of information",
+          "Adapts quickly to new data and changes in source material",
+      ],
+  },
+  {
+      Icon: LockKeyhole, // Replace with an icon for development or integration
+      name: "Open Source Collaboration",
+      title: "Community-Driven Enhancements",
+      description: "R&D Chat’s open-source framework encourages contributions from developers worldwide, enhancing the tool's capabilities and reach.",
+      features: [
+          "Facilitates innovation and continuous improvement",
+          "Leverages community expertise for new features and optimizations",
+          "Promotes transparency and inclusivity in development",
+      ],
+  },
+  {
+      Icon: LockKeyhole, // Replace with an icon that signifies security or compliance
+      name: "Secure and Compliant Interactions",
+      title: "Adherence to Data Security Standards",
+      description: "Built with security at its core, R&D Chat ensures that all data handled meets the strictest compliance standards.",
+      features: [
+          "Implements robust security measures to protect user data",
+          "Complies with GDPR and other relevant data protection regulations",
+          "Regular security audits to maintain and enhance protective measures",
+      ],
+  },
+];
 
 
 //MedicalAI's outcomes
@@ -365,9 +488,7 @@ export const featuresDataMedicalAI = [
 ];
 
 
-
-
-
+// Project Features end
 
 //Case Study Components 
 export const projectsDetails = {
@@ -407,6 +528,21 @@ export const projectsDetails = {
     ],
   },
   // Define other projects similarly...
+  rdChat: {
+    title: "R&D Chat: Real-Time Data-Driven Chat Application",
+    name: "R&D Chat",
+    subtitle: "Harnessing the Power of Real-Time Data for Instant Communication",
+    description: "R&D Chat is a cutting-edge, real-time chat application that integrates advanced data streaming technologies to provide users with immediate and up-to-date responses. Using a full-stack architecture with Python and Next.js, along with Vercel's AI SDK, OpenAI, and Cohere, R&D Chat processes and delivers information seamlessly, making it an ideal solution for data-driven communication.",
+    videoSrc: rdChat,  // Replace with actual video source if available
+    benefits: [
+      "Real-time data streaming ensures instant access to the latest information, enhancing user engagement and satisfaction.",
+      "Always up-to-date with the latest changes and information, providing accurate and current data to users.",
+      "Robust data ingestion pipeline allows the system to efficiently process and integrate new data continuously.",
+      "Built with Python and Next.js, offering a scalable and flexible full-stack solution tailored for modern web applications.",
+      "Integrates Vercel’s AI SDK for enhanced user experience with AI-powered functionalities.",
+      "Utilizes OpenAI and Cohere for advanced natural language processing, enabling the application to understand and generate human-like responses effectively."
+    ],
+  },
 };
 
 
@@ -450,6 +586,42 @@ export const projects = [
     
   },
   {
+    name: "R&D Chat",
+    description:
+      "R&D Chat leverages advanced natural language processing and machine learning technologies to provide real-time, conversational access to information. This full-stack application is built with Next.js and Python, utilizing Vercel's AI SDK, OpenAI, and Cohere to process and deliver information seamlessly.",
+    tags: [
+      {
+        name: "Next.js",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Python",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Vercel AI SDK",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "OpenAI",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Cohere",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Real-Time Data Streaming",
+        color: "blue-text-gradient",
+      },
+    ],
+    image: rdChatImg,  // Replace with actual path to the image
+    source_code_link: "https://rdchat-source-code-link.com",  // Replace with actual link
+    case_study_link: "/rdchat",  // Relative path or absolute URL to the case study
+    isNew: true,
+
+  },
+  {
     name: "Pneumonia detection with AI ",
     description:
       " Full-Stack application built with interactive tools for uploading, viewing, and analyzing medical images with AI-powered insights that enable diagnostic results within seconds with over 80% accuracy ",
@@ -477,7 +649,9 @@ export const projects = [
     ],
     image: medicai,
     source_code_link: "https://medicalai.world/",
-    case_study_link: "/medicalai"
+    case_study_link: "/medicalai",
+    isNew: true
+
 
   },
   {
@@ -500,7 +674,9 @@ export const projects = [
     ],
     image: iphone,
     source_code_link: "https://medicalai.world/",
-    case_study_link: "/healthhive"
+    case_study_link: "/healthhive",
+    isNew: true
+
   },
 
   {
@@ -523,7 +699,8 @@ export const projects = [
     ],
     image: s,
     source_code_link: "https://gpt-summarizer-api.netlify.app/",
-  
+    isNew: false
+
   },
   
 
@@ -547,6 +724,8 @@ export const projects = [
     ],
     image: cb786,
     source_code_link: "https://clubillionaire.life",
+    isNew: false
+
   },
  
   {
@@ -590,5 +769,7 @@ export const projects = [
     ],
     image: insaf,
     source_code_link: "https://insaf.vercel.app/",
+    isNew: false
+
   }
 ]
