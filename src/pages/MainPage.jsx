@@ -8,17 +8,16 @@ const MainPage = () => {
     <div className='relative z-0 bg-primary'>
       {/* <Navbar /> */}
       <Hero />
-      <Tech />
-      <Header/>
+      {/* <Tech /> */}
+      {/* <Header/> */}
       <SecondSection/>
       <TechnologySection/>
       {/* <GetStarted/> */}
       {/* <Feedbacks /> */}
       <div className="gradient-03 z-0" />
-      {/* <Explore /> */}
-      <Works />
+      <Explore />
+      {/* <Works /> */}
       {/* <Insights/> */}
-      {/* <Footer/> */}
             <Contact />
       <StarsCanvas />
     </div>

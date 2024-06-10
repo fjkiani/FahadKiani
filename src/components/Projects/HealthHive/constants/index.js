@@ -583,7 +583,7 @@ export const projects = [
     image: ml,
     source_code_link: "https://ml-your-business.netlify.app/",
     case_study_link: "/datadashboard",
-    isNew: true,
+    isNew: false,
 
     
   },
@@ -701,7 +701,7 @@ export const projects = [
     ],
     image: s,
     source_code_link: "https://gpt-summarizer-api.netlify.app/",
-    isNew: true
+    isNew: false
 
   },
   
@@ -726,7 +726,7 @@ export const projects = [
     ],
     image: cb786,
     source_code_link: "https://clubillionaire.life",
-    isNew: true
+    isNew: false
 
   },
  

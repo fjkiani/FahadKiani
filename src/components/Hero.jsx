@@ -26,8 +26,7 @@ const Hero = () => {
         <div>
           <br/>      <br/>      <br/>
           <h1 className={`${styles.heroHeadText} text-white`}>
-      Jedi Labs helps <HeroTyper wordsArray={words1} /> your business 5x
-    </h1>
+      Jedi Labs helps <HeroTyper wordsArray={words1} /> your business 5x</h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
           Machine Learning | Web Development | Data Transformation | 3D | Analytics
 

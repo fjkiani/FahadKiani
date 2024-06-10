@@ -12,6 +12,7 @@ import Healthcare from './pages/Healthcare';
 import MedicalAI from './pages/MedicalAI';
 import DataDashboard from './pages/DataDashboard';
 import RDChat from './pages/RDChat';
+import ProjectsPage from './pages/ProjectsPage';
 
 
 // import eCommerce from './pages/eCommerce';
@@ -31,6 +32,7 @@ const App = () => {
         <Route path="/DataDashboard" element={<DataDashboard />} />
         <Route path="/Contact" element={<Contact />} />
         <Route path="/RDChat" element={<RDChat />} />
+        <Route path="/ProjectsPage" element={<ProjectsPage />} />
 
 
 

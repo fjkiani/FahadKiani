@@ -199,10 +199,10 @@ body {
     position: relative;
     padding: 0 38px 24px 38px;
 
-    &:has(main.home) {
-      padding-bottom: 90px;
-      background-image: url('../../src/assets/home/background-home-tablet.jpg');
-    }
+    // &:has(main.home) {
+    //   padding-bottom: 90px;
+    //   background-image: url('../../src/assets/home/background-home-tablet.jpg');
+    // }
 
    
 
@@ -216,10 +216,10 @@ body {
       background-image: url('../../src/assets/crew/background-crew-tablet.jpg');
     }
 
-    &:has(main.technology) {
-      padding-bottom: 100px;
-      background-image: url('../../src/assets/technology/background-technology-tablet.jpg');
-    }
+    // &:has(main.technology) {
+    //   padding-bottom: 100px;
+    //   background-image: url('../../src/assets/technology/background-technology-tablet.jpg');
+    // }
   }
 
   

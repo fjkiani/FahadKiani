@@ -430,37 +430,6 @@ export const HHDataAnalytics = [
 
 
 
-// //Case Study Components 
-// export const projectsDetails = {
-//   dataDashboard: {
-//     title: "HealthHive's Case Study",
-//     subtitle: "Improved ROI forecast by 400%+ ",
-//     description: "Built on Snowflake and Streamlit.",
-//     videoSrc: HHVideo,
-//     benefits: [
-//       "To record presentations",
-//       "To deliver better feedback",
-//       "To share knowledge",
-//     ],
-//   },
-//   medicalAI: {
-//     title: "MedicalAI's Case Study",
-//     subtitle: "Medical Diagnostics with AI",
-//     description: "Built on Sagemaker, React and S3.",
-//     videoSrc: MedicalAI,
-//     benefits: [
-//       "To record presentations",
-//       "To deliver better feedback",
-//       "To share knowledge",
-//     ],
-//   },
-//   // Define other projects similarly...
-// };
-
-// 5 steps technical components HealthHive
-
-
-
 
 //Healthive sections
 
@@ -511,38 +480,38 @@ export const exploreWorlds = [
   {
     id: 'world-1',
     imgUrl: '/planet-02.png',
-    title: 'eCommerce',
-    path: '/Ecommerce',
+    title: 'Analytics',
+    path: '/datadashboard',
 
   },
   {
     id: 'world-2',
-    imgUrl: '/planet-02.png',
-    title: 'Real Estate',
-    path: '/test',
+    imgUrl: '/planet-05.png',
+    title: 'Healthcare',
+    path: '/medicalai',
 
   },
   {
     id: 'world-3',
     imgUrl: '/planet-03.png',
-    title: 'Healthcare',
-    path: '/eCommerce',
+    title: 'Generative AI',
+    path: '/rdchat',
 
   },
   {
     id: 'world-4',
     imgUrl: '/planet-04.png',
-    title: 'Financial Institutions',
-    path: '/Test',
+    title: 'Forecast',
+    path: '/HealthHive',
 
   },
-  {
-    id: 'world-5',
-    imgUrl: '/planet-05.png',
-    title: 'Hospitality',
-    path: '/Test',
+  // {
+  //   id: 'world-5',
+  //   imgUrl: '/planet-05.png',
+  //   title: 'eCommerce',
+  //   path: '/ecommerce',
 
-  },
+  // },
 ];
 
 export const insights = [

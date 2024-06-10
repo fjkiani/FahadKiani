@@ -14,7 +14,7 @@ const StyledNavbar = styled.nav`
   position: sticky; // Stick to the top
   top: 0;
   z-index: 50;
-  background-color: black;
+  // background-color: black;
   height: 6rem; // Set the height of the navbar
   
 

@@ -81,50 +81,50 @@ export const items: MenuItem[] = [
       
     ],
   },
-  // {
-  //   title: "Resources",
-  //   menu: "resources",
-  //   options: [
-  //     {
-  //       label: "Blog",
-  //       emoji: <AlignJustify className="text-orange-500" />,
-  //       href: "/",
-  //     },
-  //     {
-  //       label: "Help & Support",
-  //       emoji: <LifeBuoy className="text-green-500" />,
-  //       href: "/",
-  //     },
-  //     {
-  //       label: "Download",
-  //       emoji: <Download className="text-blue-500" />,
-  //       href: "/",
-  //     },
-  //     {
-  //       label: "BirdSDK",
-  //       emoji: <Code2Icon className="text-rose-500" />,
-  //       href: "/",
-  //     },
-  //     {
-  //       label: "Screen Recorder",
-  //       emoji: <Headphones className="text-orange-500" />,
-  //       href: "/screen-recorder",
-  //     },
-  //     {
-  //       label: "Community",
-  //       emoji: <GraduationCap className="text-green-500" />,
-  //       href: "/",
-  //     },
-  //   ],
-  // },
+  {
+    title: "Resources",
+    menu: "resources",
+    options: [
+      {
+        label: "Projects",
+        emoji: <AlignJustify className="text-orange-500" />,
+        href: "/projectspage",
+      },
+      // {
+      //   label: "Help & Support",
+      //   emoji: <LifeBuoy className="text-green-500" />,
+      //   href: "/",
+      // },
+      // {
+      //   label: "Download",
+      //   emoji: <Download className="text-blue-500" />,
+      //   href: "/",
+      // },
+      // {
+      //   label: "BirdSDK",
+      //   emoji: <Code2Icon className="text-rose-500" />,
+      //   href: "/",
+      // },
+      // {
+      //   label: "Screen Recorder",
+      //   emoji: <Headphones className="text-orange-500" />,
+      //   href: "/screen-recorder",
+      // },
+      // {
+      //   label: "Community",
+      //   emoji: <GraduationCap className="text-green-500" />,
+      //   href: "/",
+      // },
+    ],
+  },
   // {
   //   title: "Company",
   //   menu: "company",
   //   options: [
   //     {
-  //       label: "About Us",
+  //       label: "Team",
   //       emoji: <Info className="text-red-500" />,
-  //       href: "/about-us",
+  //       href: "/projectspage",
   //     },
   //     {
   //       label: "Careers",

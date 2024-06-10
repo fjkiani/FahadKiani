@@ -24,7 +24,7 @@ const ContentMenu: React.FC<ContentMenuProps> = ({ options }) => {
             <ul className='flex flex-col items-start space-y-1 py-4' style={{ listStyleType: 'none', paddingLeft: 0, margin: 0 }}>
                 {options.map((option, index) => (
                     <li key={index} className='w-full'>
-                        <Link to={option.href} className='flex items-center space-x-4 hover:bg-gray-100 w-full px-6 py-4 rounded-3xl text-white'>
+                        <Link to={option.href} className='flex items-center space-x-4 hover:bg-gray-10 w-full px-6 py-4 rounded-3xl text-white'>
                             {option.emoji}
                             <span>{option.label}</span>
                         </Link>

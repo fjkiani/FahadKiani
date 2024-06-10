@@ -30,11 +30,11 @@ const InsightCard = ({ imgUrl, title, subtitle, index, tech }) => (
       <div
         className="lg:flex hidden items-center justify-center w-[100px] h-[100px] rounded-full bg-transparent border-[1px] border-white"
       >
-        {/* <img
+        <img
           src="/arrow.svg"
           alt="arrow"
           className="w-[40%] h-[40%] object-contain"
-        /> */}
+        />
       </div>
     </div>
   </motion.div>

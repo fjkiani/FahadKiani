@@ -90,7 +90,7 @@ const SecondSection = () => {
 
   return (
     <div
-  className="pt-40 flex flex-col lg:flex-row items-center justify-center lg:space-x-10 bg-black"
+  className="pt-40 flex flex-col lg:flex-row items-center justify-center lg:space-x-10"
 >
 
   <div className="w-full lg:w-2/3 text-center lg:text-left px-6 mb-6">
