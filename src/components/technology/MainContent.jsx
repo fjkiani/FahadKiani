@@ -3,8 +3,7 @@ import PaginationDots from './PaginationDots';
 import InfoSection from './InfoSection';
 import HeroImage from './HeroImage';
 import data from './data.json';
-import portraitImg from '../../../src/assets/technology/image-space-capsule-portrait.jpg';
-import landscapeImg from '../../../src/assets/technology/image-space-capsule-landscape.jpg';
+
 
 
 export default function MainContent() {
@@ -38,11 +37,11 @@ export default function MainContent() {
         changeSelectedTech={changeSelectedTech}
       />
       <InfoSection selectedTech={selectedTech} description={description} />
-      <HeroImage
+      {/* <HeroImage
         selectedTech={selectedTech}
         portraitImg={portraitImgUrl}
         landscapeImg={landscapeImgUrl}
-      />
+      /> */}
     </div>
   );
 }
