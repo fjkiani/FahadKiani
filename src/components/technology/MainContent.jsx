@@ -40,7 +40,6 @@ export default function MainContent() {
       <HeroImage
         selectedTech={selectedTech}
         portraitImg={portraitImgUrl}
-        landscapeImg={landscapeImgUrl}
       />
     </div>
   );
