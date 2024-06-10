@@ -91,8 +91,8 @@
       {
         "name": "Proven Success",
         "images": {
-          "portrait": "../../../../src/assets/technology/image-launch-vehicle-portrait.jpg",
-          "landscape": "../../../../src/assets/technology/image-launch-vehicle-landscape.jpg"
+          "portrait": "../../../../src/assets/technology/image-launch-vehicle-portrait.png",
+          "landscape": "../../../../src/assets/technology/image-launch-vehicle-landscape.png"
         },
         "description": "Our proven track record of successful project delivery reassures you that your technological investments are in reliable hands. With our history of meeting and exceeding project goals, your business can expect dependable, high-quality solutions that achieve real-world results"
       },
