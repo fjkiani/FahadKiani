@@ -3,11 +3,17 @@ import PaginationDots from './PaginationDots';
 import InfoSection from './InfoSection';
 import HeroImage from './HeroImage';
 import data from './data.json';
+import { motion } from 'framer-motion';
 
+
+
+const fadeInVariants = {
+  hidden: { opacity: 0 },
+  visible: { opacity: 1, transition: { duration: 0.8 } }
+};
 
 
 export default function MainContent() {
-  
   const [selectedTech, setSelectedTech] = useState('Technical Expertise');
 
   function changeSelectedTech(e) {
@@ -20,18 +26,19 @@ export default function MainContent() {
   let landscapeImgUrl;
 
   for (let technology of technologies) {
-    if (technology.name !== selectedTech) {
-      continue;
-    }
-
+    if (technology.name !== selectedTech) continue;
     description = technology.description;
     portraitImgUrl = technology.images.portrait;
     landscapeImgUrl = technology.images.landscape;
   }
 
   return (
-    
-    <div className='technology__main-content'>
+    <motion.div
+      initial="hidden"
+      animate="visible"
+      variants={fadeInVariants}
+      className='technology__main-content'
+    >
       <PaginationDots
         selectedTech={selectedTech}
         changeSelectedTech={changeSelectedTech}
@@ -42,6 +49,6 @@ export default function MainContent() {
         portraitImg={portraitImgUrl}
         landscapeImg={landscapeImgUrl}
       />
-    </div>
+    </motion.div>
   );
 }

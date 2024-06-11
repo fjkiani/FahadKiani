@@ -10,7 +10,7 @@ const MainPage = () => {
       <Hero />
       {/* <Tech /> */}
       {/* <Header/> */}
-      <SecondSection/>
+      {/* <SecondSection/> */}
       <TechnologySection/>
       {/* <GetStarted/> */}
       {/* <Feedbacks /> */}

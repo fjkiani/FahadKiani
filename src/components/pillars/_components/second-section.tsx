@@ -90,13 +90,13 @@ const SecondSection = () => {
 
   return (
     <div
-  className="pt-40 flex flex-col lg:flex-row items-center justify-center lg:space-x-10"
+  className="pt-5 flex flex-col lg:flex-row items-center justify-center lg:space-x-10"
 >
 
   <div className="w-full lg:w-2/3 text-center lg:text-left px-6 mb-6">
-  <h1 className="text-1xl md:text-4xl lg:text-5xl font-light text-white mb-6 leading-snug">
+  {/* <h1 className="text-1xl md:text-4xl lg:text-5xl font-light text-white mb-6 leading-snug ">
   Technical <HeroTyper wordsArray={words2} /> for your business
-</h1>
+</h1> */}
     
     <div className="flex flex-wrap justify-center lg:justify-start gap-2 mb-6">
       {["Machine Learning", "Data Transformation", "Web Development", "Data Analytics"].map((title) => (
