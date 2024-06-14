@@ -11,6 +11,8 @@ import Contact from "./Contact";
 import Earth from "./canvas/Earth";
 //sections
 import TechnologySection from './technology/TechnologySection'
+import CrewPage from './crew/CrewPage'
+
 import CanvasLoader from "./Loader";
 import HeroTyper from "./HeroTyper";
 import Skills from "./Skills";
@@ -102,7 +104,9 @@ export {
   HHFeatures,
   HHSecondSection,
   HHThirdSection,
+  //new sections
   TechnologySection,
+  CrewPage,
   //medicalAI
   //loogos slider
   HHLogoSlider

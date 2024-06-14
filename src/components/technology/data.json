@@ -45,8 +45,8 @@
       {
         "name": "Douglas Hurley",
         "images": {
-          "png": "../public/assets/crew/image-douglas-hurley.png",
-          "webp": "../public/assets/crew/image-douglas-hurley.webp"
+          "png": "/test2.png",
+          "webp": "/test2.webp"
         },
         "role": "Commander",
         "bio": "Douglas Gerald Hurley is an American engineer, former Marine Corps pilot and former NASA astronaut. He launched into space for the third time as commander of Crew Dragon Demo-2."
@@ -54,8 +54,8 @@
       {
         "name": "Mark Shuttleworth",
         "images": {
-          "png": "../public/assets/crew/image-mark-shuttleworth.png",
-          "webp": "../public/assets/crew/image-mark-shuttleworth.webp"
+          "png": "/test2.png",
+          "webp": "/test2.webp"
         },
         "role": "Mission Specialist",
         "bio": "Mark Richard Shuttleworth is the founder and CEO of Canonical, the company behind the Linux-based Ubuntu operating system. Shuttleworth became the first South African to travel to space as a space tourist."
@@ -63,8 +63,8 @@
       {
         "name": "Victor Glover",
         "images": {
-          "png": "../public/assets/crew/image-victor-glover.png",
-          "webp": "../public/assets/crew/image-victor-glover.webp"
+          "png": "/test2.png",
+          "webp": "/test2.webp"
         },
         "role": "Pilot",
         "bio": "Pilot on the first operational flight of the SpaceX Crew Dragon to the International Space Station. Glover is a commander in the U.S. Navy where he pilots an F/A-18.He was a crew member of Expedition 64, and served as a station systems flight engineer."
@@ -72,27 +72,28 @@
       {
         "name": "Anousheh Ansari",
         "images": {
-          "png": "../public/assets/crew/image-anousheh-ansari.png",
-          "webp": "../public/assets/crew/image-anousheh-ansari.webp"
+          "png": "/test2.png",
+          "webp": "/test2.webp"
         },
         "role": "Flight Engineer",
         "bio": "Anousheh Ansari is an Iranian American engineer and co-founder of Prodea Systems. Ansari was the fourth self-funded space tourist, the first self-funded woman to fly to the ISS, and the first Iranian in space."
       }
     ],
+
     "technology": [
       {
         "name": "Technical Expertise",
         "images": {
-          "portrait": "/planet-02.png",
-          "landscape":"/planet-02.png"
+          "portrait": "/test2.png",
+          "landscape":"/test2.png"
         },
         "description": "Our deep technical expertise ensures that your business is leveraging the latest technological advancements to stay ahead of the curve. By partnering with us, you gain access to a team that is proficient in modern technologies empowering you to innovate and outperform competitors"
       },
       {
         "name": "Proven Success",
         "images": {
-          "portrait": "/planet-09.png",
-          "landscape":"/planet-09.png"
+          "portrait": "/success.png",
+          "landscape":"/success.png"
         },
         "description": "Our proven track record of successful project delivery reassures you that your technological investments are in reliable hands. With our history of meeting and exceeding project goals, your business can expect dependable, high-quality solutions that achieve real-world results"
       },
@@ -100,8 +101,8 @@
       {
         "name": "End-to-End ",
         "images": {
-          "portrait": "/planet-08.png",
-          "landscape":"/planet-08.png"
+          "portrait": "/end-to-end.png",
+          "landscape":"/end-to-end.png"
         },
         "description": "Choosing our end-to-end services means you have a single, accountable partner from project inception to completion and beyond.  We free you to focus on core business activities while we ensure that your IT infrastructure is robust, scalable, and perfectly aligned with your business objectives."
       }

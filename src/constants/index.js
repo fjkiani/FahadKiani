@@ -479,28 +479,28 @@ export const logosDataMedicalAI = [
 export const exploreWorlds = [
   {
     id: 'world-1',
-    imgUrl: '/planet-02.png',
+    imgUrl: '/analytics.png',
     title: 'Analytics',
     path: '/datadashboard',
 
   },
   {
     id: 'world-2',
-    imgUrl: '/planet-05.png',
+    imgUrl: '/healthcare.png',
     title: 'Healthcare',
     path: '/medicalai',
 
   },
   {
     id: 'world-3',
-    imgUrl: '/planet-03.png',
+    imgUrl: '/ai.png',
     title: 'Generative AI',
     path: '/rdchat',
 
   },
   {
     id: 'world-4',
-    imgUrl: '/planet-04.png',
+    imgUrl: '/roi.png',
     title: 'Forecast',
     path: '/HealthHive',
 
