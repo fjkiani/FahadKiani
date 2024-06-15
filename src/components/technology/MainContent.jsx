@@ -13,6 +13,7 @@ const fadeInVariants = {
 export default function MainContent() {
   // Initialize selectedTech with the first technology name from the JSON data.
   const [selectedTech, setSelectedTech] = useState(data.technology[0].name);
+  const [viewAll, setViewAll] = useState(false); // State to handle View All functionality
 
   function changeSelectedTech(e) {
     setSelectedTech(e.currentTarget.dataset.name);
@@ -24,15 +25,13 @@ export default function MainContent() {
   let landscapeImgUrl;
   let subtitle;
 
-
   // Loop to find the technology matching the selectedTech
   for (let technology of technologies) {
     if (technology.name !== selectedTech) continue;
     description = technology.description;
     portraitImgUrl = technology.images.portrait;
     landscapeImgUrl = technology.images.landscape;
-    subtitle = technology.subtitle;  // Fetching subtitle
-
+    subtitle = technology.subtitle; // Fetching subtitle
   }
 
   return (
@@ -40,12 +39,14 @@ export default function MainContent() {
       initial="hidden"
       animate="visible"
       variants={fadeInVariants}
-      className='technology__main-content'
+      className="technology__main-content"
     >
       <PaginationDots
-        technologies={technologies} // Passing the technologies to the PaginationDots
+        technologies={technologies}
         selectedTech={selectedTech}
         changeSelectedTech={changeSelectedTech}
+        viewAll={viewAll}
+        setViewAll={setViewAll} // Pass setViewAll function
       />
       <InfoSection selectedTech={selectedTech} description={description} subtitle={subtitle} />
       <HeroImage

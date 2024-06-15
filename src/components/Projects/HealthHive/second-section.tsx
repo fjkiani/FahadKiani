@@ -3,7 +3,6 @@ import { motion } from 'framer-motion';
 import { layout, styles } from '../../../styles';
 import FeatureCard from './FeatureCard';
 
-// Define the fade in variants for animation
 const fadeInVariants = {
   hidden: { opacity: 0, y: 20 },
   visible: { opacity: 1, y: 0, transition: { duration: 0.8 } }
@@ -11,6 +10,7 @@ const fadeInVariants = {
 
 const SecondSection = ({ featureData }) => {
   const [activeWordIndex, setActiveWordIndex] = useState(0);
+  const [viewAll, setViewAll] = useState(false);
   const words = featureData ? Object.keys(featureData) : [];
   const intervalRef = useRef(null);
 
@@ -36,20 +36,20 @@ const SecondSection = ({ featureData }) => {
     return (
       <motion.section
         id="features"
-        className={`${layout.section} px-5 md:px-10`}
+        className={layout.section}
         initial="hidden"
         animate="visible"
         variants={fadeInVariants}
       >
-        {/* <motion.div
-          className={`${layout.sectionInfo}`}
+        <motion.div
+          className={layout.sectionInfo}
           initial="hidden"
           animate="visible"
           variants={fadeInVariants}
         >
           <h2 className={styles.heading2}>{title}</h2>
           <p className={`${styles.paragraph} max-w-[470px] mt-5`}>{paragraph}</p>
-        </motion.div> */}
+        </motion.div>
         <motion.div
           className={`${layout.sectionImg} flex-col`}
           initial="hidden"
@@ -65,9 +65,9 @@ const SecondSection = ({ featureData }) => {
   };
 
   return (
-    <div className="pt-20 md:pt-40 flex flex-col lg:flex-row items-center justify-center lg:space-x-10 bg-black">
+    <div className="pt-40 flex flex-col lg:flex-row items-center justify-center lg:space-x-10 bg-black">
       <div className="w-full lg:w-2/3 text-center lg:text-left px-6 mb-6">
-        <h1 className="text-xl md:text-4xl lg:text-5xl font-light text-white mb-6 leading-snug">
+        <h1 className="text-1xl md:text-4xl lg:text-5xl font-light text-white mb-6 leading-snug">
           {words.map((word, index) => (
             <motion.span
               key={word}
@@ -93,6 +93,23 @@ const SecondSection = ({ featureData }) => {
           ))}
         </h1>
         {renderContent()}
+      </div>
+      <div className="technology__pagination-dots">
+        {(viewAll ? words : words.slice(0, 3)).map((word, index) => (
+          <div
+            key={index}
+            className={`technology__pagination-dots__dot ${index === activeWordIndex ? 'technology__pagination-dots__dot--active' : ''}`}
+            data-name={word}
+            onClick={() => handleWordClick(index)}
+          >
+            {index + 1}
+          </div>
+        ))}
+        {!viewAll && (
+          <div className="technology__pagination-dots__view-all" onClick={() => setViewAll(true)}>
+            View All
+          </div>
+        )}
       </div>
     </div>
   );

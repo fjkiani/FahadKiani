@@ -16,7 +16,6 @@ const MainPage = () => {
       <TechnologySection/>
       {/* <GetStarted/> */}
       {/* <Feedbacks /> */}
-            <DataDashboard/>
       <div className="gradient-03 z-0" />
       <Explore />
       {/* <CrewPage/> */}
