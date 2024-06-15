@@ -16,7 +16,7 @@ const HealthHive = () => {
       <HHFeatures data={dataDashboardFeatures}/>    
       {/* <HHThirdSection sectionData={thirdSectionData}/>  */}
       {/* <HHLogoSlider logos={logosData}/> */}
-      <Contact/>
+      {/* <Contact/> */}
       
       <StarsCanvas />
     </div>

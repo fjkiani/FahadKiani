@@ -477,13 +477,13 @@ export const logosDataMedicalAI = [
 ///not defined yet 
 
 export const exploreWorlds = [
-  {
-    id: 'world-1',
-    imgUrl: '/analytics.png',
-    title: 'Analytics',
-    path: '/datadashboard',
+  // {
+  //   id: 'world-1',
+  //   imgUrl: '/analytics.png',
+  //   title: 'Analytics',
+  //   path: '/datadashboard',
 
-  },
+  // },
   {
     id: 'world-2',
     imgUrl: '/healthcare.png',
@@ -501,7 +501,7 @@ export const exploreWorlds = [
   {
     id: 'world-4',
     imgUrl: '/roi.png',
-    title: 'Forecast',
+    title: 'Marketing',
     path: '/HealthHive',
 
   },
