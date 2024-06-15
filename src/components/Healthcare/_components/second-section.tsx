@@ -6,11 +6,10 @@ const MetricsContainer = styled.section`
   align-items: center;
   justify-content: space-evenly;
   padding: 20px;
-  background-color: #f9f9f9; // You can change this to match your color scheme
 `;
 
 const MetricCard = styled.div`
-  background: #ffffff;
+
   border-radius: 8px;
   padding: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);

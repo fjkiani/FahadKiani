@@ -20,7 +20,7 @@ const HeroContainer = styled(motion.div)`
     right: 0;
     bottom: 0;
     left: 0;
-    background: rgba(0, 0, 0, 0.5); // Dark overlay for text visibility
+    // background: rgba(0, 0, 0, 0.5); // Dark overlay for text visibility
   }
 `;
 
@@ -42,13 +42,11 @@ const HeroSubtitle = styled.h2`
 const CallToActionButton = styled(motion.button)`
   padding: 1rem 2rem;
   font-size: 1.25rem;
-  background-color: #03fc73; // Bright color for visibility
   border: none;
   border-radius: 5px;
   cursor: pointer;
 
   &:hover {
-    background-color: #02d762; // Slightly darker on hover
   }
 `;
 

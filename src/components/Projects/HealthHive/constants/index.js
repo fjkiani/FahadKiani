@@ -255,7 +255,7 @@ export const dataDashboardFeatures = [
     ],
   },
   {
-    Icon: LockKeyhole,
+    Icon: HeartPulse,
     name: "Inventory Management",
     title: "Detailed list of products",
     description: "Provides an exhaustive list of products, their expenses, and prices to facilitate inventory management.",
@@ -353,7 +353,8 @@ export const rdChatFeatures = {
 //R&D chat outcomes
 export const outcomesRdChat = [
   {
-    Icon: LockKeyhole, // Replace with an appropriate icon for real-time communication
+    Icon: CandlestickChart,
+    // Replace with an appropriate icon for real-time communication
     name: "Real-Time Communication",
     title: "Instant Interaction with Up-to-Date Data",
     description: "R&D Chat provides immediate responses, leveraging real-time streaming to ensure that information is current and relevant.",
@@ -364,7 +365,8 @@ export const outcomesRdChat = [
     ],
   },
   {
-    Icon: LockKeyhole, // Replace with an icon that represents data handling or processing
+    Icon: HandMetal,
+    // Replace with an icon that represents data handling or processing
     name: "Data Processing Efficiency",
     title: "Optimized Data Ingestion and Processing",
     description: "Employs an advanced data pipeline using Python and Next.js for efficient data handling and query processing.",
@@ -374,8 +376,9 @@ export const outcomesRdChat = [
       "Scalable infrastructure that grows with user demand",
     ],
   },
-  {
-      Icon: LockKeyhole, // Replace with an icon for AI or machine learning
+  { 
+      Icon: DollarSign ,
+    // Replace with an icon for AI or machine learning
       name: "Intelligent Response Generation",
       title: "Enhanced Quality of Conversations",
       description: "Utilizes AI models from OpenAI and Cohere to deliver contextually aware and engaging conversations.",
@@ -386,7 +389,7 @@ export const outcomesRdChat = [
       ],
   },
   {
-      Icon: LockKeyhole, // Replace with an icon that represents synchronization or updates
+     Icon: HeartPulse,// Replace with an icon that represents synchronization or updates
       name: "Continuous Content Updates",
       title: "Always Current with the Latest Information",
       description: "R&D Chat updates its knowledge base in real time, ensuring that all information provided to users is accurate and up-to-date.",
@@ -397,7 +400,7 @@ export const outcomesRdChat = [
       ],
   },
   {
-      Icon: LockKeyhole, // Replace with an icon for development or integration
+      Icon: SquareArrowUpRight, // Replace with an icon for development or integration
       name: "Open Source Collaboration",
       title: "Community-Driven Enhancements",
       description: "R&D Chat’s open-source framework encourages contributions from developers worldwide, enhancing the tool's capabilities and reach.",
@@ -408,7 +411,7 @@ export const outcomesRdChat = [
       ],
   },
   {
-      Icon: LockKeyhole, // Replace with an icon that signifies security or compliance
+      Icon: Brain,// Replace with an icon that signifies security or compliance
       name: "Secure and Compliant Interactions",
       title: "Adherence to Data Security Standards",
       description: "Built with security at its core, R&D Chat ensures that all data handled meets the strictest compliance standards.",
