@@ -41,7 +41,7 @@ const SecondSection = ({ featureData }) => {
         animate="visible"
         variants={fadeInVariants}
       >
-        <motion.div
+        {/* <motion.div
           className={`${layout.sectionInfo}`}
           initial="hidden"
           animate="visible"
@@ -49,7 +49,7 @@ const SecondSection = ({ featureData }) => {
         >
           <h2 className={styles.heading2}>{title}</h2>
           <p className={`${styles.paragraph} max-w-[470px] mt-5`}>{paragraph}</p>
-        </motion.div>
+        </motion.div> */}
         <motion.div
           className={`${layout.sectionImg} flex-col`}
           initial="hidden"

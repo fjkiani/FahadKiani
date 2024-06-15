@@ -10,16 +10,15 @@ const MainPage = () => {
     <div className='relative z-0 bg-primary'>
       {/* <Navbar /> */}
       <Hero />
-      <DataDashboard/>
       {/* <Tech /> */}
       {/* <Header/> */}
       {/* <SecondSection/> */}
+      <TechnologySection/>
       {/* <GetStarted/> */}
       {/* <Feedbacks /> */}
-  
+            <DataDashboard/>
       <div className="gradient-03 z-0" />
       <Explore />
-      <TechnologySection/>
       {/* <CrewPage/> */}
 
       {/* <Works /> */}
